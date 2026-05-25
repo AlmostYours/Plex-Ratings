@@ -8,8 +8,7 @@ if (!PLEX_URL || !PLEX_TOKEN) {
   process.exit(1);
 }
 
-// ── Write config.json from GitHub Variables ──────────────────────────────────
-// Fall back to sensible defaults if a variable isn't set.
+// ── Config ───────────────────────────────────────────────────────────────────
 const config = {
   ownerName:          process.env.OWNER_NAME           || 'My',
   showsTabLabel:      process.env.SHOWS_TAB_LABEL      || 'TV Shows',
@@ -18,7 +17,6 @@ const config = {
   moviesSectionLabel: process.env.MOVIES_SECTION_LABEL || 'Cinema',
   defaultTheme:       process.env.DEFAULT_THEME        || 'system',
 };
-
 fs.writeFileSync('config.json', JSON.stringify(config, null, 2));
 console.log('config.json written:', config);
 
@@ -49,6 +47,19 @@ async function downloadPoster(thumb, ratingKey) {
   }
 }
 
+// Extract IMDb ID from either the new Guid array or legacy guid string
+function extractImdbId(item) {
+  if (Array.isArray(item.Guid)) {
+    const g = item.Guid.find(g => g.id?.startsWith('imdb://'));
+    if (g) return g.id.replace('imdb://', '');
+  }
+  if (item.guid) {
+    const m = item.guid.match(/imdb:\/\/(tt\d+)/);
+    if (m) return m[1];
+  }
+  return null;
+}
+
 // ── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
   console.log('Connecting to Plex...');
@@ -63,7 +74,9 @@ async function main() {
     if (sec.type !== 'show' && sec.type !== 'movie') continue;
 
     console.log(`Scanning section: ${sec.title} (${sec.type})`);
-    const data  = await plexGet(`/library/sections/${sec.key}/all`);
+
+    // Fetch with Guid data included
+    const data  = await plexGet(`/library/sections/${sec.key}/all?includeGuids=1`);
     const items = data.MediaContainer?.Metadata || [];
     const rated = items.filter(i => i.userRating != null && i.userRating !== '');
     console.log(`  ${rated.length} rated items found.`);
@@ -72,11 +85,15 @@ async function main() {
       const poster = await downloadPoster(item.thumb, item.ratingKey);
       const entry  = {
         ratingKey:  item.ratingKey,
-        title:      item.title   || 'Untitled',
-        year:       item.year    || null,
-        summary:    item.summary || '',
+        title:      item.title              || 'Untitled',
+        year:       item.year               || null,
+        summary:    item.summary            || '',
         userRating: parseFloat(item.userRating),
-        studio:     item.studio  || null,
+        studio:     item.studio             || null,
+        contentRating: item.contentRating   || null,
+        duration:   item.duration           || null,
+        genres:     (item.Genre || []).map(g => g.tag),
+        imdbId:     extractImdbId(item),
         type:       item.type,
         poster,
       };
