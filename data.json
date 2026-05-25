@@ -11,7 +11,10 @@
       "duration": 2400000,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Adventure",
+        "Science Fiction",
+        "Drama"
       ],
       "imdbId": "tt11126994",
       "type": "show",
@@ -28,7 +31,10 @@
       "duration": 3000000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Action",
+        "Adventure",
+        "Fantasy"
       ],
       "imdbId": "tt6741278",
       "type": "show",
@@ -45,7 +51,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Fantasy",
+        "Music",
+        "Mystery"
       ],
       "imdbId": "tt21030032",
       "type": "show",
@@ -62,7 +71,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Anime"
+        "Anime",
+        "Action",
+        "Drama",
+        "Science Fiction"
       ],
       "imdbId": "tt13718450",
       "type": "show",
@@ -79,7 +91,9 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt28919914",
       "type": "show",
@@ -96,7 +110,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt27497575",
       "type": "show",
@@ -113,7 +130,10 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Romance",
+        "Comedy",
+        "Anime"
       ],
       "imdbId": "tt6591406",
       "type": "show",
@@ -130,7 +150,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Romance"
       ],
       "imdbId": "tt16341212",
       "type": "show",
@@ -147,7 +169,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt31131295",
       "type": "show",
@@ -164,7 +188,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt19064770",
       "type": "show",
@@ -181,7 +208,10 @@
       "duration": 780000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime",
+        "Short"
       ],
       "imdbId": "tt9828696",
       "type": "show",
@@ -198,7 +228,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Fantasy",
+        "Romance",
+        "Adventure"
       ],
       "imdbId": "tt31940008",
       "type": "show",
@@ -215,7 +248,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Romance",
+        "Science Fiction",
+        "Sci-Fi & Fantasy"
       ],
       "imdbId": "tt30326044",
       "type": "show",
@@ -232,7 +268,10 @@
       "duration": 1440000,
       "genres": [
         "Anime",
-        "Action"
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
       ],
       "imdbId": "tt2560140",
       "type": "show",
@@ -249,7 +288,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Adventure",
+        "Fantasy"
       ],
       "imdbId": "tt13483212",
       "type": "show",
@@ -266,7 +308,9 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt8993464",
       "type": "show",
@@ -283,7 +327,10 @@
       "duration": 1500000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Drama",
+        "Romance"
       ],
       "imdbId": "tt32639706",
       "type": "show",
@@ -300,7 +347,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Music",
+        "Anime"
       ],
       "imdbId": "tt17158756",
       "type": "show",
@@ -317,7 +367,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Mystery"
+        "Mystery",
+        "Comedy",
+        "Crime",
+        "Anime"
       ],
       "imdbId": "tt5679720",
       "type": "show",
@@ -334,7 +387,9 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt35346400",
       "type": "show",
@@ -351,7 +406,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
       ],
       "imdbId": "tt10974198",
       "type": "show",
@@ -368,7 +426,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Anime"
+        "Anime",
+        "Action",
+        "Fantasy",
+        "Romance"
       ],
       "imdbId": "tt5100366",
       "type": "show",
@@ -385,7 +446,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Romance",
+        "Comedy",
+        "Anime"
       ],
       "imdbId": "tt7521578",
       "type": "show",
@@ -402,7 +466,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Anime",
+        "Thriller",
+        "Mystery"
       ],
       "imdbId": "tt7263328",
       "type": "show",
@@ -419,7 +486,9 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt14400866",
       "type": "show",
@@ -436,7 +505,10 @@
       "duration": 1440000,
       "genres": [
         "Anime",
-        "Animation"
+        "Animation",
+        "Comedy",
+        "Action",
+        "Adventure"
       ],
       "imdbId": "tt30217403",
       "type": "show",
@@ -453,7 +525,10 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt21423786",
       "type": "show",
@@ -470,7 +545,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt21975478",
       "type": "show",
@@ -487,7 +565,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Anime"
+        "Anime",
+        "Action",
+        "Adventure",
+        "Fantasy"
       ],
       "imdbId": "tt9335498",
       "type": "show",
@@ -504,7 +585,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Drama",
+        "Romance"
       ],
       "imdbId": "tt12635162",
       "type": "show",
@@ -521,7 +605,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Adventure"
+        "Adventure",
+        "Drama",
+        "Romance",
+        "Science Fiction"
       ],
       "imdbId": "tt0765491",
       "type": "show",
@@ -538,7 +625,10 @@
       "duration": 1500000,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Animation",
+        "Drama",
+        "Fantasy"
       ],
       "imdbId": "tt0774809",
       "type": "show",
@@ -555,7 +645,10 @@
       "duration": null,
       "genres": [
         "Action",
-        "Animation"
+        "Animation",
+        "Fantasy",
+        "Drama",
+        "Adventure"
       ],
       "imdbId": null,
       "type": "show",
@@ -572,7 +665,10 @@
       "duration": 1440000,
       "genres": [
         "Action",
-        "Animation"
+        "Animation",
+        "Fantasy",
+        "Drama",
+        "Adventure"
       ],
       "imdbId": "tt3621796",
       "type": "show",
@@ -589,7 +685,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Fantasy",
+        "Romance",
+        "Sci-Fi & Fantasy"
       ],
       "imdbId": "tt30495098",
       "type": "show",
@@ -606,7 +705,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt36592690",
       "type": "show",
@@ -623,7 +725,10 @@
       "duration": 1500000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
       ],
       "imdbId": "tt22248376",
       "type": "show",
@@ -640,7 +745,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Romance"
       ],
       "imdbId": "tt9304350",
       "type": "show",
@@ -657,7 +765,10 @@
       "duration": 1500000,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama"
       ],
       "imdbId": "tt1355642",
       "type": "show",
@@ -674,7 +785,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Action",
+        "Adventure",
+        "Fantasy"
       ],
       "imdbId": "tt32612521",
       "type": "show",
@@ -691,7 +805,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Fantasy",
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt21844706",
       "type": "show",
@@ -708,7 +825,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Romance"
       ],
       "imdbId": "tt13463778",
       "type": "show",
@@ -725,7 +844,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Sport",
+        "Anime"
       ],
       "imdbId": "tt3398540",
       "type": "show",
@@ -742,7 +864,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Anime",
+        "Comedy",
+        "Romance"
       ],
       "imdbId": "tt13198632",
       "type": "show",
@@ -759,7 +884,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt9828562",
       "type": "show",
@@ -776,7 +903,9 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Romance"
+        "Romance",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt31528958",
       "type": "show",
@@ -793,7 +922,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Anime",
+        "Romance"
       ],
       "imdbId": "tt13103134",
       "type": "show",
@@ -810,7 +942,10 @@
       "duration": 1440000,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Fantasy"
       ],
       "imdbId": "tt2098220",
       "type": "show",
@@ -827,7 +962,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt32741637",
       "type": "show",
@@ -844,7 +981,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Anime"
+        "Anime",
+        "Action",
+        "Adventure",
+        "Comedy"
       ],
       "imdbId": "tt15723722",
       "type": "show",
@@ -861,7 +1001,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt37532031",
       "type": "show",
@@ -878,7 +1020,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt26450257",
       "type": "show",
@@ -895,7 +1040,10 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Action",
+        "Adventure"
       ],
       "imdbId": "tt4728568",
       "type": "show",
@@ -912,7 +1060,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Anime"
+        "Anime",
+        "Action",
+        "Adventure",
+        "Fantasy"
       ],
       "imdbId": "tt12343534",
       "type": "show",
@@ -929,7 +1080,10 @@
       "duration": 1440000,
       "genres": [
         "Comedy",
-        "Anime"
+        "Anime",
+        "Romance",
+        "Animation",
+        "Drama"
       ],
       "imdbId": "tt9522300",
       "type": "show",
@@ -946,7 +1100,10 @@
       "duration": 1440000,
       "genres": [
         "Anime",
-        "Animation"
+        "Animation",
+        "Action",
+        "Adventure",
+        "Science Fiction"
       ],
       "imdbId": "tt21975436",
       "type": "show",
@@ -963,7 +1120,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Mystery",
+        "Romance"
       ],
       "imdbId": "tt2250034",
       "type": "show",
@@ -980,7 +1140,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Adventure",
+        "Fantasy"
       ],
       "imdbId": "tt5370118",
       "type": "show",
@@ -997,7 +1160,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt21844614",
       "type": "show",
@@ -1014,7 +1179,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
       ],
       "imdbId": "tt19853780",
       "type": "show",
@@ -1031,7 +1199,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Action",
+        "Fantasy"
       ],
       "imdbId": "tt14396202",
       "type": "show",
@@ -1048,7 +1219,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt32333055",
       "type": "show",
@@ -1065,7 +1239,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Romance"
       ],
       "imdbId": "tt2321542",
       "type": "show",
@@ -1082,7 +1259,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime",
+        "Drama"
       ],
       "imdbId": "tt1587394",
       "type": "show",
@@ -1099,7 +1279,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Action",
+        "Thriller",
+        "Anime"
       ],
       "imdbId": "tt16755706",
       "type": "show",
@@ -1116,7 +1299,10 @@
       "duration": 720000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Fantasy",
+        "Romance",
+        "Sci-Fi & Fantasy"
       ],
       "imdbId": "tt30970523",
       "type": "show",
@@ -1133,7 +1319,9 @@
       "duration": 1500000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt1634208",
       "type": "show",
@@ -1150,7 +1338,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt32332831",
       "type": "show",
@@ -1167,7 +1358,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Anime",
+        "Romance"
       ],
       "imdbId": "tt6402190",
       "type": "show",
@@ -1184,7 +1378,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
       ],
       "imdbId": "tt21209804",
       "type": "show",
@@ -1201,7 +1398,9 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt32550272",
       "type": "show",
@@ -1218,7 +1417,10 @@
       "duration": 1440000,
       "genres": [
         "Action",
-        "Animation"
+        "Animation",
+        "Comedy",
+        "Fantasy",
+        "Horror"
       ],
       "imdbId": "tt5897304",
       "type": "show",
@@ -1235,7 +1437,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt16231800",
       "type": "show",
@@ -1252,7 +1457,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Anime"
+        "Anime",
+        "Action",
+        "Adventure",
+        "Drama"
       ],
       "imdbId": "tt13293588",
       "type": "show",
@@ -1269,7 +1477,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt37679127",
       "type": "show",
@@ -1286,7 +1496,10 @@
       "duration": 1440000,
       "genres": [
         "Comedy",
-        "Anime"
+        "Anime",
+        "Drama",
+        "Romance",
+        "Animation"
       ],
       "imdbId": "tt15765670",
       "type": "show",
@@ -1303,7 +1516,9 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt32742508",
       "type": "show",
@@ -1320,7 +1535,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Fantasy",
+        "History",
+        "Romance"
       ],
       "imdbId": "tt19869172",
       "type": "show",
@@ -1337,7 +1555,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Anime"
+        "Anime",
+        "Action",
+        "Adventure",
+        "Fantasy"
       ],
       "imdbId": "tt5626028",
       "type": "show",
@@ -1354,7 +1575,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Adventure",
+        "Crime",
+        "Drama"
       ],
       "imdbId": "tt35636246",
       "type": "show",
@@ -1371,7 +1595,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt22297712",
       "type": "show",
@@ -1388,7 +1614,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt4616700",
       "type": "show",
@@ -1405,7 +1633,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt15192340",
       "type": "show",
@@ -1422,7 +1653,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt19848112",
       "type": "show",
@@ -1439,7 +1673,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt2703720",
       "type": "show",
@@ -1456,7 +1693,9 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt27571597",
       "type": "show",
@@ -1473,7 +1712,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Action",
+        "Fantasy"
       ],
       "imdbId": "tt4508902",
       "type": "show",
@@ -1490,7 +1732,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt9584920",
       "type": "show",
@@ -1507,7 +1752,10 @@
       "duration": 1500000,
       "genres": [
         "Animation",
-        "Anime"
+        "Anime",
+        "Adventure",
+        "Drama",
+        "Fantasy"
       ],
       "imdbId": "tt5607616",
       "type": "show",
@@ -1524,7 +1772,10 @@
       "duration": 1500000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt11448214",
       "type": "show",
@@ -1541,7 +1792,8 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Romance"
       ],
       "imdbId": "tt2309312",
       "type": "show",
@@ -1558,7 +1810,9 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt32307386",
       "type": "show",
@@ -1575,7 +1829,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama"
       ],
       "imdbId": "tt32536168",
       "type": "show",
@@ -1592,7 +1849,8 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime"
       ],
       "imdbId": "tt4967674",
       "type": "show",
@@ -1609,7 +1867,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt35331428",
       "type": "show",
@@ -1626,7 +1886,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt30024091",
       "type": "show",
@@ -1643,7 +1906,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt16156718",
       "type": "show",
@@ -1660,7 +1926,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Romance"
       ],
       "imdbId": "tt4542568",
       "type": "show",
@@ -1677,7 +1946,10 @@
       "duration": 1440000,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Fantasy",
+        "Animation",
+        "Sci-Fi & Fantasy"
       ],
       "imdbId": "tt21209876",
       "type": "show",
@@ -1694,7 +1966,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Science Fiction",
+        "Adventure",
+        "Anime"
       ],
       "imdbId": "tt8747928",
       "type": "show",
@@ -1711,7 +1986,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Fantasy",
+        "Romance",
+        "Sci-Fi & Fantasy"
       ],
       "imdbId": "tt31975268",
       "type": "show",
@@ -1728,7 +2006,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Mystery",
+        "Anime",
+        "Fantasy"
       ],
       "imdbId": "tt15686254",
       "type": "show",
@@ -1745,7 +2026,10 @@
       "duration": 1440000,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Animation",
+        "Fantasy",
+        "Romance"
       ],
       "imdbId": "tt2250192",
       "type": "show",
@@ -1762,7 +2046,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt7808344",
       "type": "show",
@@ -1779,7 +2065,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Adventure"
+        "Adventure",
+        "Comedy",
+        "Fantasy",
+        "Romance"
       ],
       "imdbId": "tt38037498",
       "type": "show",
@@ -1796,7 +2085,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt36592708",
       "type": "show",
@@ -1813,7 +2104,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt21210326",
       "type": "show",
@@ -1830,7 +2124,10 @@
       "duration": 1380000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Comedy",
+        "Anime",
+        "Romance"
       ],
       "imdbId": "tt1279024",
       "type": "show",
@@ -1847,7 +2144,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Fantasy",
+        "Romance"
       ],
       "imdbId": "tt16255458",
       "type": "show",
@@ -1864,7 +2164,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt6472710",
       "type": "show",
@@ -1881,7 +2183,10 @@
       "duration": 1440000,
       "genres": [
         "Action",
-        "Animation"
+        "Animation",
+        "Comedy",
+        "Fantasy",
+        "Anime"
       ],
       "imdbId": "tt5637108",
       "type": "show",
@@ -1898,7 +2203,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Anime",
+        "Drama",
+        "Romance"
       ],
       "imdbId": "tt12464182",
       "type": "show",
@@ -1915,7 +2223,10 @@
       "duration": 1500000,
       "genres": [
         "Animation",
-        "Anime"
+        "Anime",
+        "Drama",
+        "Action",
+        "Adventure"
       ],
       "imdbId": "tt10233448",
       "type": "show",
@@ -1932,7 +2243,10 @@
       "duration": 1500000,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Science Fiction",
+        "Fantasy",
+        "Romance"
       ],
       "imdbId": "tt7078180",
       "type": "show",
@@ -1949,7 +2263,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt2963556",
       "type": "show",
@@ -1966,7 +2282,9 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt14979456",
       "type": "show",
@@ -1983,7 +2301,10 @@
       "duration": 1440000,
       "genres": [
         "Anime",
-        "Animation"
+        "Animation",
+        "Action",
+        "Adventure",
+        "Comedy"
       ],
       "imdbId": "tt29605391",
       "type": "show",
@@ -2000,7 +2321,9 @@
       "duration": 1380000,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Anime",
+        "Animation"
       ],
       "imdbId": "tt8254880",
       "type": "show",
@@ -2017,7 +2340,10 @@
       "duration": 1380000,
       "genres": [
         "Comedy",
-        "Anime"
+        "Anime",
+        "Music",
+        "Romance",
+        "Animation"
       ],
       "imdbId": "tt3895150",
       "type": "show",
@@ -2036,7 +2362,8 @@
       "duration": 6454911,
       "genres": [
         "Action",
-        "Crime"
+        "Crime",
+        "Thriller"
       ],
       "imdbId": "tt0322259",
       "type": "movie",
@@ -2053,7 +2380,9 @@
       "duration": 10708969,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Science Fiction",
+        "Fantasy"
       ],
       "imdbId": "tt0499549",
       "type": "movie",
@@ -2070,7 +2399,10 @@
       "duration": 6007061,
       "genres": [
         "Animation",
-        "Adventure"
+        "Adventure",
+        "Action",
+        "Comedy",
+        "Crime"
       ],
       "imdbId": "tt8115900",
       "type": "movie",
@@ -2087,7 +2419,10 @@
       "duration": 8026815,
       "genres": [
         "Science Fiction",
-        "Action"
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama"
       ],
       "imdbId": "tt3480822",
       "type": "movie",
@@ -2104,7 +2439,10 @@
       "duration": 6996073,
       "genres": [
         "Animation",
-        "Adventure"
+        "Adventure",
+        "Comedy",
+        "Family",
+        "Sport"
       ],
       "imdbId": "tt0317219",
       "type": "movie",
@@ -2121,7 +2459,10 @@
       "duration": 6376552,
       "genres": [
         "Family",
-        "Animation"
+        "Animation",
+        "Adventure",
+        "Action",
+        "Comedy"
       ],
       "imdbId": "tt1216475",
       "type": "movie",
@@ -2138,7 +2479,10 @@
       "duration": 6145107,
       "genres": [
         "Comedy",
-        "Animation"
+        "Animation",
+        "Adventure",
+        "Family",
+        "Drama"
       ],
       "imdbId": "tt3606752",
       "type": "movie",
@@ -2155,7 +2499,8 @@
       "duration": 7455765,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Sport"
       ],
       "imdbId": "tt15339570",
       "type": "movie",
@@ -2172,7 +2517,9 @@
       "duration": 8180265,
       "genres": [
         "Drama",
-        "Biography"
+        "Biography",
+        "History",
+        "Sport"
       ],
       "imdbId": "tt0393162",
       "type": "movie",
@@ -2189,7 +2536,9 @@
       "duration": 6728838,
       "genres": [
         "Drama",
-        "Romance"
+        "Romance",
+        "Comedy",
+        "Music"
       ],
       "imdbId": "tt10366460",
       "type": "movie",
@@ -2206,7 +2555,9 @@
       "duration": 6070947,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Music",
+        "Anime"
       ],
       "imdbId": "tt23951384",
       "type": "movie",
@@ -2223,7 +2574,8 @@
       "duration": 7087165,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Romance"
       ],
       "imdbId": "tt1570728",
       "type": "movie",
@@ -2240,7 +2592,10 @@
       "duration": 8009839,
       "genres": [
         "Drama",
-        "Romance"
+        "Romance",
+        "Science Fiction",
+        "Thriller",
+        "Action"
       ],
       "imdbId": "tt11858890",
       "type": "movie",
@@ -2257,7 +2612,9 @@
       "duration": 9873960,
       "genres": [
         "Action",
-        "Crime"
+        "Crime",
+        "Drama",
+        "Thriller"
       ],
       "imdbId": "tt1345836",
       "type": "movie",
@@ -2274,7 +2631,10 @@
       "duration": 7824275,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Science Fiction",
+        "Drama",
+        "Thriller"
       ],
       "imdbId": "tt2103281",
       "type": "movie",
@@ -2291,7 +2651,8 @@
       "duration": 6700798,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt0832266",
       "type": "movie",
@@ -2308,7 +2669,8 @@
       "duration": 6564477,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Romance"
       ],
       "imdbId": "tt0458352",
       "type": "movie",
@@ -2325,7 +2687,9 @@
       "duration": 6898643,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Fantasy",
+        "Science Fiction"
       ],
       "imdbId": "tt1211837",
       "type": "movie",
@@ -2359,7 +2723,9 @@
       "duration": 9326661,
       "genres": [
         "Science Fiction",
-        "Action"
+        "Action",
+        "Adventure",
+        "Drama"
       ],
       "imdbId": "tt1160419",
       "type": "movie",
@@ -2376,7 +2742,10 @@
       "duration": 6087879,
       "genres": [
         "Animation",
-        "Adventure"
+        "Adventure",
+        "Comedy",
+        "Family",
+        "Fantasy"
       ],
       "imdbId": "tt15789038",
       "type": "movie",
@@ -2393,7 +2762,8 @@
       "duration": 7972435,
       "genres": [
         "Adventure",
-        "Family"
+        "Family",
+        "Fantasy"
       ],
       "imdbId": "tt3183660",
       "type": "movie",
@@ -2410,7 +2780,8 @@
       "duration": 8459571,
       "genres": [
         "Fantasy",
-        "Family"
+        "Family",
+        "Adventure"
       ],
       "imdbId": "tt4123430",
       "type": "movie",
@@ -2427,7 +2798,8 @@
       "duration": 6411509,
       "genres": [
         "Action",
-        "Crime"
+        "Crime",
+        "Thriller"
       ],
       "imdbId": "tt0232500",
       "type": "movie",
@@ -2444,7 +2816,10 @@
       "duration": 5429300,
       "genres": [
         "Drama",
-        "Romance"
+        "Romance",
+        "Anime",
+        "Science Fiction",
+        "Animation"
       ],
       "imdbId": "tt6317962",
       "type": "movie",
@@ -2461,7 +2836,8 @@
       "duration": 6523605,
       "genres": [
         "Drama",
-        "Crime"
+        "Crime",
+        "Thriller"
       ],
       "imdbId": "tt0780516",
       "type": "movie",
@@ -2478,7 +2854,9 @@
       "duration": 5386272,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Romance",
+        "Family"
       ],
       "imdbId": "tt0817177",
       "type": "movie",
@@ -2495,7 +2873,10 @@
       "duration": 6898645,
       "genres": [
         "Comedy",
-        "Science Fiction"
+        "Science Fiction",
+        "Action",
+        "Adventure",
+        "Fantasy"
       ],
       "imdbId": "tt6264654",
       "type": "movie",
@@ -2512,7 +2893,10 @@
       "duration": 6133139,
       "genres": [
         "Adventure",
-        "Animation"
+        "Animation",
+        "Family",
+        "Comedy",
+        "Fantasy"
       ],
       "imdbId": "tt2294629",
       "type": "movie",
@@ -2529,7 +2913,10 @@
       "duration": 6194110,
       "genres": [
         "Adventure",
-        "Animation"
+        "Animation",
+        "Comedy",
+        "Family",
+        "Fantasy"
       ],
       "imdbId": "tt4520988",
       "type": "movie",
@@ -2546,7 +2933,10 @@
       "duration": 5867994,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Family",
+        "Romance",
+        "TV Movie"
       ],
       "imdbId": "tt1835977",
       "type": "movie",
@@ -2563,7 +2953,8 @@
       "duration": 5371071,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Romance"
       ],
       "imdbId": "tt1769363",
       "type": "movie",
@@ -2580,7 +2971,10 @@
       "duration": 5940442,
       "genres": [
         "Fantasy",
-        "Animation"
+        "Animation",
+        "Drama",
+        "Science Fiction",
+        "Comedy"
       ],
       "imdbId": "tt0808506",
       "type": "movie",
@@ -2597,7 +2991,9 @@
       "duration": 6788843,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Science Fiction",
+        "Thriller"
       ],
       "imdbId": "tt5034838",
       "type": "movie",
@@ -2614,7 +3010,8 @@
       "duration": 7742954,
       "genres": [
         "Action",
-        "Thriller"
+        "Thriller",
+        "Mystery"
       ],
       "imdbId": "tt1649418",
       "type": "movie",
@@ -2631,7 +3028,8 @@
       "duration": 6316606,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt9683478",
       "type": "movie",
@@ -2665,7 +3063,8 @@
       "duration": 7761609,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt1001508",
       "type": "movie",
@@ -2699,7 +3098,10 @@
       "duration": 5491581,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Family",
+        "Thriller",
+        "Fantasy"
       ],
       "imdbId": "tt0837562",
       "type": "movie",
@@ -2716,7 +3118,10 @@
       "duration": 5358440,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Family",
+        "Adventure",
+        "Thriller"
       ],
       "imdbId": "tt2510894",
       "type": "movie",
@@ -2733,7 +3138,10 @@
       "duration": 6496539,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Romance",
+        "Family",
+        "Anime"
       ],
       "imdbId": "tt7236034",
       "type": "movie",
@@ -2750,7 +3158,9 @@
       "duration": 6884198,
       "genres": [
         "Action",
-        "Science Fiction"
+        "Science Fiction",
+        "Mystery",
+        "Thriller"
       ],
       "imdbId": "tt0343818",
       "type": "movie",
@@ -2784,7 +3194,9 @@
       "duration": 7824488,
       "genres": [
         "Drama",
-        "Crime"
+        "Crime",
+        "Thriller",
+        "Action"
       ],
       "imdbId": "tt0790724",
       "type": "movie",
@@ -2801,7 +3213,9 @@
       "duration": 5891902,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt12879624",
       "type": "movie",
@@ -2835,7 +3249,9 @@
       "duration": 5677340,
       "genres": [
         "Comedy",
-        "Fantasy"
+        "Fantasy",
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt0425123",
       "type": "movie",
@@ -2852,7 +3268,9 @@
       "duration": 8223507,
       "genres": [
         "Drama",
-        "Biography"
+        "Biography",
+        "Crime",
+        "History"
       ],
       "imdbId": "tt4916630",
       "type": "movie",
@@ -2869,7 +3287,10 @@
       "duration": 8401450,
       "genres": [
         "Drama",
-        "Action"
+        "Action",
+        "Adventure",
+        "Family",
+        "Sport"
       ],
       "imdbId": "tt1155076",
       "type": "movie",
@@ -2886,7 +3307,10 @@
       "duration": 5529576,
       "genres": [
         "Comedy",
-        "Animation"
+        "Animation",
+        "Family",
+        "Action",
+        "Adventure"
       ],
       "imdbId": "tt0441773",
       "type": "movie",
@@ -2937,7 +3361,8 @@
       "duration": 6880211,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt1055292",
       "type": "movie",
@@ -2971,7 +3396,8 @@
       "duration": 6582634,
       "genres": [
         "Drama",
-        "Comedy"
+        "Comedy",
+        "Romance"
       ],
       "imdbId": "tt5164432",
       "type": "movie",
@@ -2988,7 +3414,8 @@
       "duration": 5942826,
       "genres": [
         "Fantasy",
-        "Romance"
+        "Romance",
+        "Comedy"
       ],
       "imdbId": "tt11080108",
       "type": "movie",
@@ -3005,7 +3432,10 @@
       "duration": 6897907,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Fantasy",
+        "Adventure",
+        "Romance"
       ],
       "imdbId": "tt7339826",
       "type": "movie",
@@ -3022,7 +3452,10 @@
       "duration": 6806889,
       "genres": [
         "Science Fiction",
-        "Action"
+        "Action",
+        "Adventure",
+        "Mystery",
+        "Thriller"
       ],
       "imdbId": "tt1790864",
       "type": "movie",
@@ -3039,7 +3472,10 @@
       "duration": 6227859,
       "genres": [
         "Family",
-        "Animation"
+        "Animation",
+        "Comedy",
+        "Fantasy",
+        "Adventure"
       ],
       "imdbId": "tt1453405",
       "type": "movie",
@@ -3056,7 +3492,10 @@
       "duration": 5661760,
       "genres": [
         "Family",
-        "Animation"
+        "Animation",
+        "Action",
+        "Adventure",
+        "Science Fiction"
       ],
       "imdbId": "tt0892782",
       "type": "movie",
@@ -3073,7 +3512,8 @@
       "duration": 6292371,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt0119738",
       "type": "movie",
@@ -3090,7 +3530,9 @@
       "duration": 6259029,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Romance",
+        "Food"
       ],
       "imdbId": "tt0481141",
       "type": "movie",
@@ -3107,7 +3549,8 @@
       "duration": 7437523,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt0125439",
       "type": "movie",
@@ -3124,7 +3567,10 @@
       "duration": 6141450,
       "genres": [
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Family",
+        "Fantasy",
+        "Adventure"
       ],
       "imdbId": "tt7146812",
       "type": "movie",
@@ -3141,7 +3587,9 @@
       "duration": 6975060,
       "genres": [
         "Action",
-        "Comedy"
+        "Comedy",
+        "Crime",
+        "Thriller"
       ],
       "imdbId": "tt1386588",
       "type": "movie",
@@ -3158,7 +3606,10 @@
       "duration": 5929941,
       "genres": [
         "Animation",
-        "Adventure"
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Science Fiction"
       ],
       "imdbId": "tt2981768",
       "type": "movie",
@@ -3175,7 +3626,10 @@
       "duration": 5420499,
       "genres": [
         "Animation",
-        "Adventure"
+        "Adventure",
+        "Drama",
+        "Romance",
+        "Science Fiction"
       ],
       "imdbId": "tt0381348",
       "type": "movie",
@@ -3209,7 +3663,8 @@
       "duration": 6467603,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt1041829",
       "type": "movie",
@@ -3226,7 +3681,8 @@
       "duration": 8397600,
       "genres": [
         "Science Fiction",
-        "Action"
+        "Action",
+        "Adventure"
       ],
       "imdbId": "tt1677720",
       "type": "movie",
@@ -3243,7 +3699,10 @@
       "duration": 6296459,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Thriller",
+        "Drama",
+        "Science Fiction"
       ],
       "imdbId": "tt1318514",
       "type": "movie",
@@ -3260,7 +3719,9 @@
       "duration": 5869993,
       "genres": [
         "Action",
-        "Comedy"
+        "Comedy",
+        "Crime",
+        "Thriller"
       ],
       "imdbId": "tt0120812",
       "type": "movie",
@@ -3277,7 +3738,9 @@
       "duration": 5408126,
       "genres": [
         "Action",
-        "Comedy"
+        "Comedy",
+        "Crime",
+        "Thriller"
       ],
       "imdbId": "tt0266915",
       "type": "movie",
@@ -3294,7 +3757,8 @@
       "duration": 5457642,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt0240890",
       "type": "movie",
@@ -3311,7 +3775,9 @@
       "duration": 7782781,
       "genres": [
         "Drama",
-        "Romance"
+        "Romance",
+        "Anime",
+        "Animation"
       ],
       "imdbId": "tt5323662",
       "type": "movie",
@@ -3328,7 +3794,8 @@
       "duration": 8590313,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Thriller"
       ],
       "imdbId": "tt1074638",
       "type": "movie",
@@ -3345,7 +3812,8 @@
       "duration": 6305384,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Romance"
       ],
       "imdbId": "tt0108160",
       "type": "movie",
@@ -3362,7 +3830,10 @@
       "duration": 7285013,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Science Fiction",
+        "Thriller",
+        "Fantasy"
       ],
       "imdbId": "tt8404256",
       "type": "movie",
@@ -3379,7 +3850,10 @@
       "duration": 6617401,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Comedy",
+        "Family",
+        "Fantasy"
       ],
       "imdbId": "tt18259086",
       "type": "movie",
@@ -3396,7 +3870,10 @@
       "duration": 6032960,
       "genres": [
         "Animation",
-        "Family"
+        "Family",
+        "Comedy",
+        "Fantasy",
+        "Adventure"
       ],
       "imdbId": "tt2948372",
       "type": "movie",
@@ -3413,7 +3890,10 @@
       "duration": 8406400,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Adventure",
+        "Science Fiction",
+        "Family"
       ],
       "imdbId": "tt9362722",
       "type": "movie",
@@ -3430,7 +3910,10 @@
       "duration": 7010163,
       "genres": [
         "Family",
-        "Action"
+        "Action",
+        "Adventure",
+        "Animation",
+        "Science Fiction"
       ],
       "imdbId": "tt4633694",
       "type": "movie",
@@ -3447,7 +3930,10 @@
       "duration": 6105748,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Family"
       ],
       "imdbId": "tt10298840",
       "type": "movie",
@@ -3464,7 +3950,10 @@
       "duration": 7285400,
       "genres": [
         "Adventure",
-        "Fantasy"
+        "Fantasy",
+        "Drama",
+        "Anime",
+        "Animation"
       ],
       "imdbId": "tt16428256",
       "type": "movie",
@@ -3481,7 +3970,8 @@
       "duration": 6083136,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt0889573",
       "type": "movie",
@@ -3498,7 +3988,10 @@
       "duration": 5032048,
       "genres": [
         "Comedy",
-        "Animation"
+        "Animation",
+        "Romance",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt3413018",
       "type": "movie",
@@ -3515,7 +4008,10 @@
       "duration": 6017322,
       "genres": [
         "Comedy",
-        "Animation"
+        "Animation",
+        "Family",
+        "Fantasy",
+        "Musical"
       ],
       "imdbId": "tt0398286",
       "type": "movie",
@@ -3532,7 +4028,10 @@
       "duration": 6078099,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Science Fiction",
+        "Comedy",
+        "Crime"
       ],
       "imdbId": "tt1291150",
       "type": "movie",
@@ -3549,7 +4048,10 @@
       "duration": 6400467,
       "genres": [
         "Animation",
-        "Romance"
+        "Romance",
+        "Science Fiction",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt1715210",
       "type": "movie",
@@ -3566,7 +4068,9 @@
       "duration": 5643477,
       "genres": [
         "Action",
-        "Crime"
+        "Crime",
+        "Drama",
+        "Thriller"
       ],
       "imdbId": "tt2401097",
       "type": "movie",
@@ -3583,7 +4087,10 @@
       "duration": 4960035,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Fantasy",
+        "Mystery",
+        "Romance"
       ],
       "imdbId": "tt17382524",
       "type": "movie",
@@ -3600,7 +4107,10 @@
       "duration": 6733802,
       "genres": [
         "Animation",
-        "Fantasy"
+        "Fantasy",
+        "Romance",
+        "Drama",
+        "Anime"
       ],
       "imdbId": "tt9426210",
       "type": "movie",
@@ -3617,7 +4127,10 @@
       "duration": 5230984,
       "genres": [
         "Drama",
-        "Romance"
+        "Romance",
+        "Anime",
+        "Music",
+        "Animation"
       ],
       "imdbId": "tt12735338",
       "type": "movie",
@@ -3634,7 +4147,8 @@
       "duration": 7164243,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt0128853",
       "type": "movie",
@@ -3651,7 +4165,10 @@
       "duration": 6395648,
       "genres": [
         "Animation",
-        "Drama"
+        "Drama",
+        "Fantasy",
+        "Romance",
+        "Anime"
       ],
       "imdbId": "tt5311514",
       "type": "movie",
@@ -3668,7 +4185,10 @@
       "duration": 6512531,
       "genres": [
         "Animation",
-        "Action"
+        "Action",
+        "Adventure",
+        "Family",
+        "Comedy"
       ],
       "imdbId": "tt2948356",
       "type": "movie",
@@ -3685,7 +4205,9 @@
       "duration": 6559656,
       "genres": [
         "Thriller",
-        "Action"
+        "Action",
+        "Crime",
+        "Comedy"
       ],
       "imdbId": "tt1272878",
       "type": "movie",
@@ -3702,7 +4224,10 @@
       "duration": 5997075,
       "genres": [
         "Crime",
-        "Drama"
+        "Drama",
+        "Thriller",
+        "Action",
+        "Adventure"
       ],
       "imdbId": "tt8688634",
       "type": "movie",
@@ -3719,7 +4244,9 @@
       "duration": 6787668,
       "genres": [
         "Horror",
-        "Thriller"
+        "Thriller",
+        "Science Fiction",
+        "Drama"
       ],
       "imdbId": "tt0289043",
       "type": "movie",
@@ -3736,7 +4263,10 @@
       "duration": 7402195,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Science Fiction",
+        "Fantasy",
+        "Romance"
       ],
       "imdbId": "tt2194499",
       "type": "movie",
@@ -3753,7 +4283,8 @@
       "duration": 6698218,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Thriller"
       ],
       "imdbId": "tt1961175",
       "type": "movie",
@@ -3770,7 +4301,10 @@
       "duration": 7252095,
       "genres": [
         "Thriller",
-        "History"
+        "History",
+        "War",
+        "Action",
+        "Drama"
       ],
       "imdbId": "tt4190530",
       "type": "movie",
@@ -3821,7 +4355,10 @@
       "duration": 9827901,
       "genres": [
         "Science Fiction",
-        "Thriller"
+        "Thriller",
+        "Action",
+        "Drama",
+        "Mystery"
       ],
       "imdbId": "tt1856101",
       "type": "movie",
@@ -3855,7 +4392,8 @@
       "duration": 7591850,
       "genres": [
         "Action",
-        "Thriller"
+        "Thriller",
+        "Comedy"
       ],
       "imdbId": "tt12593682",
       "type": "movie",
@@ -3872,7 +4410,10 @@
       "duration": 7219304,
       "genres": [
         "Action",
-        "Crime"
+        "Crime",
+        "Science Fiction",
+        "Drama",
+        "Thriller"
       ],
       "imdbId": "tt1823672",
       "type": "movie",
@@ -3906,7 +4447,10 @@
       "duration": 6486334,
       "genres": [
         "Action",
-        "Adventure"
+        "Adventure",
+        "Comedy",
+        "Science Fiction",
+        "Fantasy"
       ],
       "imdbId": "tt1431045",
       "type": "movie",
@@ -3923,7 +4467,9 @@
       "duration": 6024147,
       "genres": [
         "Action",
-        "Drama"
+        "Drama",
+        "Thriller",
+        "Crime"
       ],
       "imdbId": "tt0780504",
       "type": "movie",
@@ -3940,7 +4486,8 @@
       "duration": 5495295,
       "genres": [
         "Drama",
-        "Comedy"
+        "Comedy",
+        "Romance"
       ],
       "imdbId": "tt2055765",
       "type": "movie",
@@ -3957,7 +4504,9 @@
       "duration": 6425214,
       "genres": [
         "Action",
-        "Science Fiction"
+        "Science Fiction",
+        "Thriller",
+        "Drama"
       ],
       "imdbId": "tt0238380",
       "type": "movie",
@@ -3974,7 +4523,10 @@
       "duration": 8359446,
       "genres": [
         "Science Fiction",
-        "Comedy"
+        "Comedy",
+        "Action",
+        "Adventure",
+        "Fantasy"
       ],
       "imdbId": "tt6710474",
       "type": "movie",
@@ -4008,7 +4560,10 @@
       "duration": 6284242,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Crime",
+        "Drama",
+        "Thriller"
       ],
       "imdbId": "tt2381941",
       "type": "movie",
@@ -4025,7 +4580,8 @@
       "duration": 6491541,
       "genres": [
         "Thriller",
-        "Mystery"
+        "Mystery",
+        "Drama"
       ],
       "imdbId": "tt4178092",
       "type": "movie",
@@ -4042,7 +4598,9 @@
       "duration": 9488576,
       "genres": [
         "Drama",
-        "Thriller"
+        "Thriller",
+        "Crime",
+        "Mystery"
       ],
       "imdbId": "tt1568346",
       "type": "movie",
@@ -4059,7 +4617,9 @@
       "duration": 6835498,
       "genres": [
         "Crime",
-        "Drama"
+        "Drama",
+        "Mystery",
+        "Thriller"
       ],
       "imdbId": "tt0452623",
       "type": "movie",
@@ -4076,7 +4636,10 @@
       "duration": 8342933,
       "genres": [
         "Drama",
-        "Western"
+        "Western",
+        "Action",
+        "Adventure",
+        "Crime"
       ],
       "imdbId": "tt10696784",
       "type": "movie",
@@ -4093,7 +4656,8 @@
       "duration": 6151444,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt8718158",
       "type": "movie",
@@ -4110,7 +4674,9 @@
       "duration": 6993002,
       "genres": [
         "Drama",
-        "Horror"
+        "Horror",
+        "Thriller",
+        "Mystery"
       ],
       "imdbId": "tt9639470",
       "type": "movie",
@@ -4127,7 +4693,9 @@
       "duration": 7108992,
       "genres": [
         "Drama",
-        "Crime"
+        "Crime",
+        "Thriller",
+        "Mystery"
       ],
       "imdbId": "tt1189340",
       "type": "movie",
@@ -4144,7 +4712,10 @@
       "duration": 8243368,
       "genres": [
         "Action",
-        "Science Fiction"
+        "Science Fiction",
+        "Drama",
+        "Thriller",
+        "Suspense"
       ],
       "imdbId": "tt3315342",
       "type": "movie",
@@ -4161,7 +4732,8 @@
       "duration": 8091227,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt0314331",
       "type": "movie",
@@ -4178,7 +4750,8 @@
       "duration": 5613333,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Romance"
       ],
       "imdbId": "tt1082853",
       "type": "movie",
@@ -4211,7 +4784,9 @@
       "duration": 6641150,
       "genres": [
         "Horror",
-        "Drama"
+        "Drama",
+        "Thriller",
+        "Mystery"
       ],
       "imdbId": "tt5886440",
       "type": "movie",
@@ -4228,7 +4803,8 @@
       "duration": 6703786,
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Romance"
       ],
       "imdbId": "tt0120772",
       "type": "movie",
@@ -4277,7 +4853,9 @@
       "duration": 6298346,
       "genres": [
         "Crime",
-        "Drama"
+        "Drama",
+        "Thriller",
+        "Mystery"
       ],
       "imdbId": "tt14114802",
       "type": "movie",
@@ -4344,7 +4922,8 @@
       "duration": 5688787,
       "genres": [
         "Action",
-        "Thriller"
+        "Thriller",
+        "Crime"
       ],
       "imdbId": "tt2072233",
       "type": "movie",
@@ -4361,7 +4940,8 @@
       "duration": 5812864,
       "genres": [
         "Drama",
-        "Comedy"
+        "Comedy",
+        "Romance"
       ],
       "imdbId": "tt2205697",
       "type": "movie",
@@ -4395,7 +4975,8 @@
       "duration": 5322750,
       "genres": [
         "Comedy",
-        "Horror"
+        "Horror",
+        "Thriller"
       ],
       "imdbId": "tt1465522",
       "type": "movie",
@@ -4429,7 +5010,8 @@
       "duration": 6128277,
       "genres": [
         "Drama",
-        "Romance"
+        "Romance",
+        "Comedy"
       ],
       "imdbId": "tt0108451",
       "type": "movie",
@@ -4446,7 +5028,8 @@
       "duration": 6560637,
       "genres": [
         "Drama",
-        "Romance"
+        "Romance",
+        "Comedy"
       ],
       "imdbId": "tt1193138",
       "type": "movie",
@@ -4463,7 +5046,8 @@
       "duration": 5733118,
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "imdbId": "tt0098635",
       "type": "movie",
@@ -4480,12 +5064,14 @@
       "duration": 9419496,
       "genres": [
         "Thriller",
-        "Drama"
+        "Drama",
+        "History",
+        "War"
       ],
       "imdbId": "tt1790885",
       "type": "movie",
       "poster": "posters/13528.jpg"
     }
   ],
-  "updatedAt": "2026-05-25T05:11:54.366Z"
+  "updatedAt": "2026-05-25T05:37:32.108Z"
 }
