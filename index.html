@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rodney's Ratings</title>
+<title>Ratings</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* ── LIGHT THEME ── */
   :root {
     --ink:       #0d0d0f;
     --paper:     #f5f0e8;
@@ -21,11 +20,8 @@
     --card-dim:  #e8e4dc;
     --card-dim2: #d4cfc7;
     --summary:   #3a3530;
-    --header-sub: rgba(245,240,232,0.5);
-    --header-updated: rgba(245,240,232,0.3);
   }
 
-  /* ── DARK THEME ── */
   [data-theme="dark"] {
     --ink:       #f0ebe3;
     --paper:     #18181b;
@@ -37,8 +33,6 @@
     --card-dim:  #2a2a2e;
     --card-dim2: #333338;
     --summary:   #c8c0b8;
-    --header-sub: rgba(240,235,227,0.45);
-    --header-updated: rgba(240,235,227,0.25);
   }
 
   html { scroll-behavior: smooth; }
@@ -92,13 +86,14 @@
   /* ── APP ── */
   #app { display: none; }
 
+  /* ── HEADER ── */
   header {
     background: #0d0d0f;
     padding: 2.5rem 4rem 2rem;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
     border-bottom: 3px solid var(--accent);
     position: relative;
@@ -123,7 +118,7 @@
 
   .header-left p {
     font-style: italic;
-    color: var(--header-sub);
+    color: rgba(245,240,232,0.45);
     font-size: 0.95rem;
     margin-top: 0.4rem;
   }
@@ -133,14 +128,72 @@
     font-size: 0.6rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--header-updated);
+    color: rgba(245,240,232,0.25);
     margin-top: 0.5rem;
   }
 
-  /* Dark mode toggle */
-  .theme-toggle {
+  .header-right {
     position: relative;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* ── SEARCH ── */
+  .search-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-wrap svg {
+    position: absolute;
+    left: 0.75rem;
+    color: rgba(245,240,232,0.4);
+    pointer-events: none;
+    width: 15px; height: 15px;
+  }
+
+  #search-input {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    padding: 0.5rem 2.25rem 0.5rem 2.25rem;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #f5f0e8;
+    outline: none;
+    width: 220px;
+    transition: background 0.2s, border-color 0.2s, width 0.3s;
+    border-radius: 2px;
+  }
+
+  #search-input::placeholder { color: rgba(245,240,232,0.35); }
+  #search-input:focus {
+    background: rgba(255,255,255,0.11);
+    border-color: rgba(200,65,26,0.6);
+    width: 280px;
+  }
+
+  #search-clear {
+    position: absolute;
+    right: 0.6rem;
+    background: none;
+    border: none;
+    color: rgba(245,240,232,0.4);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.1rem;
+    display: none;
+    transition: color 0.2s;
+  }
+  #search-clear:hover { color: #f5f0e8; }
+  #search-clear.visible { display: block; }
+
+  /* ── THEME TOGGLE ── */
+  .theme-toggle {
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 2rem;
@@ -148,11 +201,7 @@
     display: flex;
     align-items: center;
     gap: 0.25rem;
-    cursor: pointer;
-    transition: background 0.2s;
   }
-
-  .theme-toggle:hover { background: rgba(255,255,255,0.14); }
 
   .theme-toggle button {
     background: none;
@@ -161,7 +210,7 @@
     font-size: 1rem;
     padding: 0.2rem 0.45rem;
     border-radius: 1rem;
-    color: rgba(255,255,255,0.45);
+    color: rgba(255,255,255,0.4);
     transition: background 0.2s, color 0.2s;
     line-height: 1;
   }
@@ -193,6 +242,7 @@
     border-bottom: 2px solid transparent;
     margin-bottom: -1px;
     transition: all 0.2s;
+    white-space: nowrap;
   }
 
   .tab:hover { color: rgba(245,240,232,0.8); }
@@ -217,9 +267,37 @@
     margin: 0 auto;
   }
 
+  /* Normal tab sections */
   .section { display: none; }
   .section.active { display: block; }
 
+  /* Search results section */
+  #search-results { display: none; }
+  #search-results.active { display: block; }
+
+  .search-group { margin-bottom: 3rem; }
+
+  .search-group-title {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 5rem 2rem;
+    color: var(--muted);
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+
+  /* ── BAR ── */
   .bar {
     display: flex;
     align-items: center;
@@ -270,22 +348,23 @@
   .card {
     cursor: pointer;
     transition: transform 0.25s cubic-bezier(.34,1.56,.64,1);
-    animation: fadeIn 0.4s ease both;
+    animation: fadeIn 0.3s ease both;
   }
 
   .card:hover { transform: translateY(-6px); }
 
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(12px); }
+    from { opacity: 0; transform: translateY(10px); }
     to   { opacity: 1; transform: translateY(0); }
   }
 
+  /* ── POSTER — clean, no overlay ── */
   .poster-wrap {
-    position: relative;
     aspect-ratio: 2/3;
     overflow: hidden;
     background: var(--card-dim);
     box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    position: relative;
     transition: background 0.3s;
   }
 
@@ -312,30 +391,10 @@
     text-transform: uppercase;
   }
 
-  .rating-badge {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    padding: 0.5rem 0.6rem 0.4rem;
-    background: linear-gradient(to top, rgba(13,13,15,0.95) 0%, rgba(13,13,15,0.6) 70%, transparent 100%);
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    z-index: 2;
+  /* ── CARD META — rating lives here now ── */
+  .card-meta {
+    padding: 0.55rem 0.15rem 0;
   }
-
-  .stars { font-size: 0.7rem; letter-spacing: -1px; line-height: 1; }
-  .star-filled { color: var(--gold); }
-  .star-half   { color: var(--gold); opacity: 0.7; }
-  .star-empty  { color: rgba(255,255,255,0.2); }
-
-  .rating-num {
-    font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
-    color: rgba(245,240,232,0.7);
-    margin-left: 0.1rem;
-  }
-
-  .card-meta { padding: 0.6rem 0.25rem 0; }
 
   .card-title {
     font-family: 'Crimson Pro', serif;
@@ -346,13 +405,39 @@
     overflow: hidden;
     text-overflow: ellipsis;
     transition: color 0.3s;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    flex-wrap: wrap;
   }
 
   .card-year {
     font-size: 0.78rem;
     color: var(--muted);
     font-style: italic;
-    margin-top: 0.1rem;
+    flex-shrink: 0;
+  }
+
+  .card-divider {
+    font-size: 0.65rem;
+    color: var(--border);
+    flex-shrink: 0;
+  }
+
+  .card-stars { font-size: 0.65rem; letter-spacing: -0.5px; line-height: 1; flex-shrink: 0; }
+  .star-filled { color: var(--gold); }
+  .star-half   { color: var(--gold); opacity: 0.7; }
+  .star-empty  { color: var(--border); }
+
+  .card-rating-num {
+    font-family: 'Cinzel', serif;
+    font-size: 0.62rem;
+    color: var(--muted);
+    flex-shrink: 0;
   }
 
   .empty {
@@ -466,11 +551,18 @@
   }
   .modal-close:hover { color: var(--ink); }
 
-  @media (max-width: 768px) {
-    header, .tabs, .content { padding-left: 1.5rem; padding-right: 1.5rem; }
+  @media (max-width: 900px) {
+    header { padding: 1.5rem 1.5rem 1.25rem; }
+    .tabs, .content { padding-left: 1.5rem; padding-right: 1.5rem; }
+    #search-input { width: 180px; }
+    #search-input:focus { width: 220px; }
+  }
+
+  @media (max-width: 600px) {
     .grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 1rem; }
     .modal-inner { flex-direction: column; }
     .modal-poster-wrap { width: 100%; aspect-ratio: 16/9; }
+    #search-input, #search-input:focus { width: 160px; }
   }
 </style>
 </head>
@@ -488,24 +580,49 @@
       <p id="header-sub"></p>
       <div class="updated" id="updated-at"></div>
     </div>
-    <div class="theme-toggle" aria-label="Toggle theme">
-      <button id="btn-light" onclick="setTheme('light')" title="Light mode">☀️</button>
-      <button id="btn-system" onclick="setTheme('system')" title="Match system">⚙️</button>
-      <button id="btn-dark" onclick="setTheme('dark')" title="Dark mode">🌙</button>
+    <div class="header-right">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" id="search-input" placeholder="Search titles…" autocomplete="off"
+          oninput="handleSearch(this.value)" />
+        <button id="search-clear" onclick="clearSearch()" title="Clear search">✕</button>
+      </div>
+      <div class="theme-toggle" aria-label="Toggle theme">
+        <button id="btn-light"  onclick="setTheme('light')"  title="Light mode">☀️</button>
+        <button id="btn-system" onclick="setTheme('system')" title="Match system">⚙️</button>
+        <button id="btn-dark"   onclick="setTheme('dark')"   title="Dark mode">🌙</button>
+      </div>
     </div>
   </header>
 
   <div class="tabs">
     <button class="tab active" data-tab="shows" onclick="switchTab('shows')">
-      <span id="shows-tab-label"></span>
+      <span id="shows-tab-label">TV Shows</span>
       <span class="count" id="shows-count">0</span>
     </button>
     <button class="tab" data-tab="movies" onclick="switchTab('movies')">
-      Movies <span class="count" id="movies-count">0</span>
+      <span id="movies-tab-label">Movies</span>
+      <span class="count" id="movies-count">0</span>
     </button>
   </div>
 
   <div class="content">
+    <!-- Search results (cross-tab) -->
+    <div id="search-results">
+      <div id="search-no-results" class="no-results" style="display:none">No results found.</div>
+      <div class="search-group" id="search-shows-group" style="display:none">
+        <div class="search-group-title" id="search-shows-label"></div>
+        <div class="grid" id="search-shows-grid"></div>
+      </div>
+      <div class="search-group" id="search-movies-group" style="display:none">
+        <div class="search-group-title" id="search-movies-label"></div>
+        <div class="grid" id="search-movies-grid"></div>
+      </div>
+    </div>
+
+    <!-- TV Shows tab -->
     <div class="section active" id="tab-shows">
       <div class="bar">
         <span class="section-title" id="shows-section-title"></span>
@@ -527,9 +644,10 @@
       </div>
     </div>
 
+    <!-- Movies tab -->
     <div class="section" id="tab-movies">
       <div class="bar">
-        <span class="section-title">Cinema</span>
+        <span class="section-title" id="movies-section-title"></span>
         <div class="controls">
           <label>Sort</label>
           <select onchange="sortGrid('movies', this.value)">
@@ -559,11 +677,11 @@
       <div class="modal-poster-placeholder" id="modal-poster-ph">No Image</div>
     </div>
     <div class="modal-body">
-      <div class="modal-type" id="modal-type"></div>
-      <div class="modal-title" id="modal-title"></div>
-      <div class="modal-year" id="modal-year"></div>
+      <div class="modal-type"       id="modal-type"></div>
+      <div class="modal-title"      id="modal-title"></div>
+      <div class="modal-year"       id="modal-year"></div>
       <div class="modal-rating">
-        <div class="modal-stars" id="modal-stars"></div>
+        <div class="modal-stars"      id="modal-stars"></div>
         <div class="modal-rating-num" id="modal-rating-num"></div>
       </div>
       <div class="modal-summary" id="modal-summary"></div>
@@ -572,26 +690,11 @@
 </div>
 
 <script>
-  // ╔══════════════════════════════════════════════╗
-  // ║            CONFIGURATION                     ║
-  // ║  Edit these values to personalise your page  ║
-  // ╚══════════════════════════════════════════════╝
-  const CONFIG = {
-    // Your name — appears in the header and browser tab
-    ownerName: "Rodney",
+  let allShows = [], allMovies = [], cfg = {};
+  let showsSort = 'rating-desc', moviesSort = 'rating-desc';
+  let activeTab = 'shows';
 
-    // Label for the TV Shows tab and section heading
-    showsLabel: "Anime",
-
-    // Default colour theme: "system" | "light" | "dark"
-    // "system" follows the visitor's OS preference
-    defaultTheme: "system",
-  };
-  // ═══════════════════════════════════════════════
-
-  let allShows = [], allMovies = [];
-
-  // ── THEME ──────────────────────────────────────
+  // ── THEME ──────────────────────────────────────────────────────────────────
   const THEME_KEY = 'ratings-theme';
 
   function applyTheme(theme) {
@@ -599,9 +702,8 @@
       ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
       : theme;
     document.documentElement.setAttribute('data-theme', resolved);
-    ['light','system','dark'].forEach(t => {
-      document.getElementById(`btn-${t}`)?.classList.toggle('active', t === theme);
-    });
+    ['light','system','dark'].forEach(t =>
+      document.getElementById(`btn-${t}`)?.classList.toggle('active', t === theme));
   }
 
   function setTheme(theme) {
@@ -609,37 +711,40 @@
     applyTheme(theme);
   }
 
-  function initTheme() {
-    const saved = localStorage.getItem(THEME_KEY) || CONFIG.defaultTheme;
+  function initTheme(defaultTheme) {
+    const saved = localStorage.getItem(THEME_KEY) || defaultTheme || 'system';
     applyTheme(saved);
-    ['light','system','dark'].forEach(t => {
-      document.getElementById(`btn-${t}`)?.classList.toggle('active', t === saved);
-    });
-    // Keep "system" in sync if the OS preference changes
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-      if ((localStorage.getItem(THEME_KEY) || CONFIG.defaultTheme) === 'system') applyTheme('system');
+      if ((localStorage.getItem(THEME_KEY) || defaultTheme) === 'system') applyTheme('system');
     });
   }
 
-  // ── INIT ───────────────────────────────────────
+  // ── INIT ───────────────────────────────────────────────────────────────────
   async function init() {
-    initTheme();
-
-    // Apply config to the page text
-    document.title                                          = `${CONFIG.ownerName}'s Ratings`;
-    document.getElementById('site-title').textContent      = `${CONFIG.ownerName}'s Ratings`;
-    document.getElementById('shows-tab-label').textContent = CONFIG.showsLabel;
-    document.getElementById('shows-section-title').textContent = CONFIG.showsLabel;
-
     try {
-      const res  = await fetch('data.json?t=' + Date.now());
-      const data = await res.json();
+      // Load config and data in parallel
+      const [cfgRes, dataRes] = await Promise.all([
+        fetch('config.json?t=' + Date.now()),
+        fetch('data.json?t='   + Date.now()),
+      ]);
+      cfg           = await cfgRes.json();
+      const data    = await dataRes.json();
+      allShows      = data.shows  || [];
+      allMovies     = data.movies || [];
 
-      allShows  = data.shows  || [];
-      allMovies = data.movies || [];
+      // Apply config to page
+      initTheme(cfg.defaultTheme);
+      document.title = `${cfg.ownerName}'s Ratings`;
+      document.getElementById('site-title').textContent         = `${cfg.ownerName}'s Ratings`;
+      document.getElementById('shows-tab-label').textContent    = cfg.showsTabLabel;
+      document.getElementById('movies-tab-label').textContent   = cfg.moviesTabLabel;
+      document.getElementById('shows-section-title').textContent  = cfg.showsSectionLabel;
+      document.getElementById('movies-section-title').textContent = cfg.moviesSectionLabel;
+      document.getElementById('search-shows-label').textContent  = cfg.showsTabLabel;
+      document.getElementById('search-movies-label').textContent = cfg.moviesTabLabel;
 
-      renderGrid('shows',  allShows,  'rating-desc');
-      renderGrid('movies', allMovies, 'rating-desc');
+      renderGrid('shows',  allShows,  showsSort);
+      renderGrid('movies', allMovies, moviesSort);
 
       document.getElementById('shows-count').textContent  = allShows.length;
       document.getElementById('movies-count').textContent = allMovies.length;
@@ -652,14 +757,71 @@
           'Last updated ' + d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
       }
     } catch (e) {
-      console.error('Failed to load data.json:', e);
+      console.error('Failed to load data:', e);
+      initTheme('system');
     }
 
     document.getElementById('loading').style.display = 'none';
-    document.getElementById('app').style.display = 'block';
+    document.getElementById('app').style.display     = 'block';
   }
 
-  // ── RENDER ─────────────────────────────────────
+  // ── SEARCH ─────────────────────────────────────────────────────────────────
+  function handleSearch(query) {
+    const q = query.trim().toLowerCase();
+    document.getElementById('search-clear').classList.toggle('visible', q.length > 0);
+
+    const resultsEl = document.getElementById('search-results');
+    const tabSections = document.querySelectorAll('.section');
+
+    if (!q) {
+      resultsEl.classList.remove('active');
+      tabSections.forEach(s => s.classList.toggle('active', s.id === `tab-${activeTab}`));
+      return;
+    }
+
+    // Hide normal tab content, show search results
+    tabSections.forEach(s => s.classList.remove('active'));
+    resultsEl.classList.add('active');
+
+    const matchedShows  = allShows.filter(i  => i.title.toLowerCase().includes(q));
+    const matchedMovies = allMovies.filter(i => i.title.toLowerCase().includes(q));
+
+    const noResults = document.getElementById('search-no-results');
+    const showsGroup  = document.getElementById('search-shows-group');
+    const moviesGroup = document.getElementById('search-movies-group');
+
+    if (!matchedShows.length && !matchedMovies.length) {
+      noResults.style.display   = 'block';
+      showsGroup.style.display  = 'none';
+      moviesGroup.style.display = 'none';
+      return;
+    }
+
+    noResults.style.display = 'none';
+
+    if (matchedShows.length) {
+      showsGroup.style.display = 'block';
+      renderInto('search-shows-grid', matchedShows, 'rating-desc');
+    } else {
+      showsGroup.style.display = 'none';
+    }
+
+    if (matchedMovies.length) {
+      moviesGroup.style.display = 'block';
+      renderInto('search-movies-grid', matchedMovies, 'rating-desc');
+    } else {
+      moviesGroup.style.display = 'none';
+    }
+  }
+
+  function clearSearch() {
+    const input = document.getElementById('search-input');
+    input.value = '';
+    handleSearch('');
+    input.focus();
+  }
+
+  // ── RENDER ─────────────────────────────────────────────────────────────────
   function renderGrid(type, items, sort) {
     const grid  = document.getElementById(`${type}-grid`);
     const empty = document.getElementById(`${type}-empty`);
@@ -671,33 +833,39 @@
       return;
     }
     empty.style.display = 'none';
+    renderInto(`${type}-grid`, sorted, sort);
+  }
 
-    grid.innerHTML = sorted.map((item, i) => {
-      const rating = parseFloat(item.userRating);
-      const stars  = renderStars(rating);
-      const title  = esc(item.title || 'Untitled');
-      const year   = item.year || '';
-      const poster = item.poster || '';
+  function renderInto(gridId, items, sort) {
+    const sorted = sortItems([...items], sort);
+    document.getElementById(gridId).innerHTML = sorted.map((item, i) => cardHTML(item, i)).join('');
+  }
 
-      return `<div class="card" style="animation-delay:${Math.min(i * 0.03, 0.6)}s"
-                   onclick='openModal(${JSON.stringify(JSON.stringify(item))})'>
-        <div class="poster-wrap">
-          ${poster
-            ? `<img class="poster-img" src="${poster}" alt="${title}" loading="lazy"
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />`
-            : ''}
-          <div class="poster-placeholder" style="${poster ? '' : 'display:flex'}">${title}</div>
-          <div class="rating-badge">
-            <div class="stars">${stars}</div>
-            <span class="rating-num">${rating.toFixed(1)}</span>
-          </div>
+  function cardHTML(item, i) {
+    const rating = parseFloat(item.userRating);
+    const stars  = renderStars(rating);
+    const title  = esc(item.title || 'Untitled');
+    const year   = item.year || '';
+    const poster = item.poster || '';
+
+    return `<div class="card" style="animation-delay:${Math.min(i * 0.025, 0.5)}s"
+                 onclick='openModal(${JSON.stringify(JSON.stringify(item))})'>
+      <div class="poster-wrap">
+        ${poster
+          ? `<img class="poster-img" src="${poster}" alt="${title}" loading="lazy"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />`
+          : ''}
+        <div class="poster-placeholder" style="${poster ? '' : 'display:flex'}">${title}</div>
+      </div>
+      <div class="card-meta">
+        <div class="card-title" title="${title}">${title}</div>
+        <div class="card-footer">
+          ${year ? `<span class="card-year">${year}</span><span class="card-divider">·</span>` : ''}
+          <div class="card-stars">${stars}</div>
+          <span class="card-rating-num">${rating.toFixed(1)}</span>
         </div>
-        <div class="card-meta">
-          <div class="card-title" title="${title}">${title}</div>
-          ${year ? `<div class="card-year">${year}</div>` : ''}
-        </div>
-      </div>`;
-    }).join('');
+      </div>
+    </div>`;
   }
 
   function renderStars(r) {
@@ -709,6 +877,7 @@
     ).join('');
   }
 
+  // ── SORT ───────────────────────────────────────────────────────────────────
   function sortItems(items, sort) {
     return items.sort((a, b) => {
       if (sort === 'rating-desc') return b.userRating - a.userRating;
@@ -722,14 +891,24 @@
   }
 
   function sortGrid(type, sort) {
+    if (type === 'shows') showsSort = sort;
+    else moviesSort = sort;
     renderGrid(type, type === 'shows' ? allShows : allMovies, sort);
   }
 
+  // ── TABS ───────────────────────────────────────────────────────────────────
   function switchTab(tab) {
-    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
-    document.querySelectorAll('.section').forEach(s => s.classList.toggle('active', s.id === `tab-${tab}`));
+    activeTab = tab;
+    // Only switch if not searching
+    if (!document.getElementById('search-input').value.trim()) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+      document.querySelectorAll('.section').forEach(s => s.classList.toggle('active', s.id === `tab-${tab}`));
+    } else {
+      document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+    }
   }
 
+  // ── MODAL ──────────────────────────────────────────────────────────────────
   function openModal(jsonStr) {
     const item   = JSON.parse(jsonStr);
     const rating = parseFloat(item.userRating);
@@ -762,7 +941,15 @@
   }
 
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') document.getElementById('modal').classList.remove('open');
+    if (e.key === 'Escape') {
+      document.getElementById('modal').classList.remove('open');
+      clearSearch();
+    }
+    // Focus search on Ctrl/Cmd+K or /
+    if ((e.key === 'k' && (e.ctrlKey || e.metaKey)) || (e.key === '/' && document.activeElement.tagName !== 'INPUT')) {
+      e.preventDefault();
+      document.getElementById('search-input').focus();
+    }
   });
 
   function esc(s) {
