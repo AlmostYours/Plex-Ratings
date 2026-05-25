@@ -2,8 +2,8 @@ name: Update Plex Ratings
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # Every 6 hours
-  workflow_dispatch:          # Also allows manual trigger from GitHub UI
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -23,11 +23,17 @@ jobs:
       - name: Fetch ratings from Plex
         run: node scripts/fetch-ratings.js
         env:
-          PLEX_URL: ${{ secrets.PLEX_URL }}
-          PLEX_TOKEN: ${{ secrets.PLEX_TOKEN }}
+          PLEX_URL:              ${{ secrets.PLEX_URL }}
+          PLEX_TOKEN:            ${{ secrets.PLEX_TOKEN }}
+          OWNER_NAME:            ${{ vars.OWNER_NAME }}
+          SHOWS_TAB_LABEL:       ${{ vars.SHOWS_TAB_LABEL }}
+          SHOWS_SECTION_LABEL:   ${{ vars.SHOWS_SECTION_LABEL }}
+          MOVIES_TAB_LABEL:      ${{ vars.MOVIES_TAB_LABEL }}
+          MOVIES_SECTION_LABEL:  ${{ vars.MOVIES_SECTION_LABEL }}
+          DEFAULT_THEME:         ${{ vars.DEFAULT_THEME }}
 
       - name: Commit and push updated data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Update ratings data'
-          file_pattern: 'data.json posters/'
+          file_pattern: 'data.json config.json posters/'
