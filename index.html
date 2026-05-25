@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Ratings</title>
+<title>Rodney's Ratings</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+  /* ── LIGHT THEME ── */
   :root {
-    --ink: #0d0d0f;
-    --paper: #f5f0e8;
-    --accent: #c8411a;
-    --gold: #b8860b;
-    --muted: #6b6560;
-    --border: #ddd8cc;
+    --ink:       #0d0d0f;
+    --paper:     #f5f0e8;
+    --surface:   #ffffff;
+    --accent:    #c8411a;
+    --gold:      #b8860b;
+    --muted:     #6b6560;
+    --border:    #ddd8cc;
+    --card-dim:  #e8e4dc;
+    --card-dim2: #d4cfc7;
+    --summary:   #3a3530;
+    --header-sub: rgba(245,240,232,0.5);
+    --header-updated: rgba(245,240,232,0.3);
+  }
+
+  /* ── DARK THEME ── */
+  [data-theme="dark"] {
+    --ink:       #f0ebe3;
+    --paper:     #18181b;
+    --surface:   #27272a;
+    --accent:    #e0592a;
+    --gold:      #d4a017;
+    --muted:     #a09890;
+    --border:    #3a3a3e;
+    --card-dim:  #2a2a2e;
+    --card-dim2: #333338;
+    --summary:   #c8c0b8;
+    --header-sub: rgba(240,235,227,0.45);
+    --header-updated: rgba(240,235,227,0.25);
   }
 
   html { scroll-behavior: smooth; }
@@ -27,12 +50,13 @@
     min-height: 100vh;
     font-size: 18px;
     line-height: 1.5;
+    transition: background 0.3s, color 0.3s;
   }
 
   /* ── LOADING ── */
   #loading {
     position: fixed; inset: 0;
-    background: var(--ink);
+    background: #0d0d0f;
     z-index: 999;
     display: flex;
     align-items: center;
@@ -65,11 +89,11 @@
 
   @keyframes sweep { to { left: 110%; } }
 
-  /* ── HEADER ── */
+  /* ── APP ── */
   #app { display: none; }
 
   header {
-    background: var(--ink);
+    background: #0d0d0f;
     padding: 2.5rem 4rem 2rem;
     display: flex;
     align-items: flex-end;
@@ -92,14 +116,14 @@
     font-family: 'Cinzel', serif;
     font-size: clamp(1.8rem, 4vw, 3rem);
     font-weight: 900;
-    color: var(--paper);
+    color: #f5f0e8;
     letter-spacing: 0.05em;
     line-height: 1;
   }
 
   .header-left p {
     font-style: italic;
-    color: rgba(245,240,232,0.5);
+    color: var(--header-sub);
     font-size: 0.95rem;
     margin-top: 0.4rem;
   }
@@ -109,15 +133,49 @@
     font-size: 0.6rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: rgba(245,240,232,0.3);
+    color: var(--header-updated);
     margin-top: 0.5rem;
+  }
+
+  /* Dark mode toggle */
+  .theme-toggle {
+    position: relative;
+    z-index: 1;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 2rem;
+    padding: 0.35rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .theme-toggle:hover { background: rgba(255,255,255,0.14); }
+
+  .theme-toggle button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.2rem 0.45rem;
+    border-radius: 1rem;
+    color: rgba(255,255,255,0.45);
+    transition: background 0.2s, color 0.2s;
+    line-height: 1;
+  }
+
+  .theme-toggle button.active {
+    background: rgba(255,255,255,0.15);
+    color: #f5f0e8;
   }
 
   /* ── TABS ── */
   .tabs {
     display: flex;
     padding: 0 4rem;
-    background: var(--ink);
+    background: #0d0d0f;
     border-bottom: 1px solid #222;
   }
 
@@ -138,7 +196,7 @@
   }
 
   .tab:hover { color: rgba(245,240,232,0.8); }
-  .tab.active { color: var(--paper); border-bottom-color: var(--accent); }
+  .tab.active { color: #f5f0e8; border-bottom-color: var(--accent); }
 
   .tab .count {
     display: inline-block;
@@ -176,6 +234,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.08em;
+    color: var(--ink);
   }
 
   .controls { display: flex; gap: 0.5rem; align-items: center; }
@@ -193,10 +252,11 @@
     font-size: 0.9rem;
     padding: 0.35rem 0.75rem;
     border: 1px solid var(--border);
-    background: #fff;
+    background: var(--surface);
     color: var(--ink);
     cursor: pointer;
     outline: none;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
   }
   select:focus { border-color: var(--accent); }
 
@@ -224,14 +284,14 @@
     position: relative;
     aspect-ratio: 2/3;
     overflow: hidden;
-    background: #e8e4dc;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    background: var(--card-dim);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    transition: background 0.3s;
   }
 
   .poster-img {
     width: 100%; height: 100%;
-    object-fit: cover;
-    display: block;
+    object-fit: cover; display: block;
     transition: transform 0.4s ease;
   }
 
@@ -242,7 +302,7 @@
     display: none;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #e8e4dc, #d4cfc7);
+    background: linear-gradient(135deg, var(--card-dim), var(--card-dim2));
     color: var(--muted);
     font-family: 'Cinzel', serif;
     font-size: 0.7rem;
@@ -285,6 +345,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: color 0.3s;
   }
 
   .card-year {
@@ -305,7 +366,7 @@
   #modal {
     display: none;
     position: fixed; inset: 0;
-    background: rgba(13,13,15,0.85);
+    background: rgba(0,0,0,0.85);
     z-index: 100;
     align-items: center;
     justify-content: center;
@@ -325,8 +386,9 @@
     gap: 2rem;
     padding: 2rem;
     position: relative;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
     animation: slideUp 0.3s cubic-bezier(.34,1.56,.64,1);
+    transition: background 0.3s;
   }
 
   @keyframes slideUp {
@@ -339,7 +401,7 @@
     width: 160px;
     aspect-ratio: 2/3;
     position: relative;
-    background: #e8e4dc;
+    background: var(--card-dim);
   }
 
   .modal-poster { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -375,6 +437,7 @@
     color: var(--ink);
     line-height: 1.2;
     margin-bottom: 0.4rem;
+    transition: color 0.3s;
   }
 
   .modal-year { font-style: italic; color: var(--muted); margin-bottom: 1rem; font-size: 0.95rem; }
@@ -390,7 +453,7 @@
 
   .modal-stars { font-size: 1.1rem; letter-spacing: 1px; }
   .modal-rating-num { font-family: 'Cinzel', serif; font-size: 0.85rem; color: var(--muted); }
-  .modal-summary { font-size: 0.95rem; line-height: 1.65; color: #3a3530; }
+  .modal-summary { font-size: 0.95rem; line-height: 1.65; color: var(--summary); transition: color 0.3s; }
 
   .modal-close {
     position: absolute; top: 1rem; right: 1rem;
@@ -421,15 +484,21 @@
 <div id="app">
   <header>
     <div class="header-left">
-      <h1>My Ratings</h1>
+      <h1 id="site-title"></h1>
       <p id="header-sub"></p>
       <div class="updated" id="updated-at"></div>
+    </div>
+    <div class="theme-toggle" aria-label="Toggle theme">
+      <button id="btn-light" onclick="setTheme('light')" title="Light mode">☀️</button>
+      <button id="btn-system" onclick="setTheme('system')" title="Match system">⚙️</button>
+      <button id="btn-dark" onclick="setTheme('dark')" title="Dark mode">🌙</button>
     </div>
   </header>
 
   <div class="tabs">
     <button class="tab active" data-tab="shows" onclick="switchTab('shows')">
-      TV Shows <span class="count" id="shows-count">0</span>
+      <span id="shows-tab-label"></span>
+      <span class="count" id="shows-count">0</span>
     </button>
     <button class="tab" data-tab="movies" onclick="switchTab('movies')">
       Movies <span class="count" id="movies-count">0</span>
@@ -439,7 +508,7 @@
   <div class="content">
     <div class="section active" id="tab-shows">
       <div class="bar">
-        <span class="section-title">Television &amp; Anime</span>
+        <span class="section-title" id="shows-section-title"></span>
         <div class="controls">
           <label>Sort</label>
           <select onchange="sortGrid('shows', this.value)">
@@ -454,7 +523,7 @@
       </div>
       <div class="grid" id="shows-grid"></div>
       <div class="empty" id="shows-empty" style="display:none">
-        <p>No rated TV shows yet — check back after the first sync runs.</p>
+        <p>No rated shows yet — check back after the first sync runs.</p>
       </div>
     </div>
 
@@ -503,9 +572,65 @@
 </div>
 
 <script>
+  // ╔══════════════════════════════════════════════╗
+  // ║            CONFIGURATION                     ║
+  // ║  Edit these values to personalise your page  ║
+  // ╚══════════════════════════════════════════════╝
+  const CONFIG = {
+    // Your name — appears in the header and browser tab
+    ownerName: "Rodney",
+
+    // Label for the TV Shows tab and section heading
+    showsLabel: "Anime",
+
+    // Default colour theme: "system" | "light" | "dark"
+    // "system" follows the visitor's OS preference
+    defaultTheme: "system",
+  };
+  // ═══════════════════════════════════════════════
+
   let allShows = [], allMovies = [];
 
+  // ── THEME ──────────────────────────────────────
+  const THEME_KEY = 'ratings-theme';
+
+  function applyTheme(theme) {
+    const resolved = theme === 'system'
+      ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      : theme;
+    document.documentElement.setAttribute('data-theme', resolved);
+    ['light','system','dark'].forEach(t => {
+      document.getElementById(`btn-${t}`)?.classList.toggle('active', t === theme);
+    });
+  }
+
+  function setTheme(theme) {
+    localStorage.setItem(THEME_KEY, theme);
+    applyTheme(theme);
+  }
+
+  function initTheme() {
+    const saved = localStorage.getItem(THEME_KEY) || CONFIG.defaultTheme;
+    applyTheme(saved);
+    ['light','system','dark'].forEach(t => {
+      document.getElementById(`btn-${t}`)?.classList.toggle('active', t === saved);
+    });
+    // Keep "system" in sync if the OS preference changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      if ((localStorage.getItem(THEME_KEY) || CONFIG.defaultTheme) === 'system') applyTheme('system');
+    });
+  }
+
+  // ── INIT ───────────────────────────────────────
   async function init() {
+    initTheme();
+
+    // Apply config to the page text
+    document.title                                          = `${CONFIG.ownerName}'s Ratings`;
+    document.getElementById('site-title').textContent      = `${CONFIG.ownerName}'s Ratings`;
+    document.getElementById('shows-tab-label').textContent = CONFIG.showsLabel;
+    document.getElementById('shows-section-title').textContent = CONFIG.showsLabel;
+
     try {
       const res  = await fetch('data.json?t=' + Date.now());
       const data = await res.json();
@@ -534,6 +659,7 @@
     document.getElementById('app').style.display = 'block';
   }
 
+  // ── RENDER ─────────────────────────────────────
   function renderGrid(type, items, sort) {
     const grid  = document.getElementById(`${type}-grid`);
     const empty = document.getElementById(`${type}-empty`);
