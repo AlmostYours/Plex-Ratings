@@ -585,7 +585,11 @@
   @media (max-width: 600px) {
     .grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 1rem; }
     .modal-inner { flex-direction: column; }
-    .modal-poster-wrap { width: 100%; aspect-ratio: 16/9; }
+    .modal-poster-wrap { 
+      width: 100%; 
+      aspect-ratio: 16/9; 
+      margin-top: 1.5rem; /* This moves the poster down below the close button */
+    }
     #search-input, #search-input:focus { width: 160px; }
   }
 </style>
