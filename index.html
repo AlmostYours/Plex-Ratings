@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Ratings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0d0d0f;
+    --paper: #f5f0e8;
+    --accent: #c8411a;
+    --gold: #b8860b;
+    --muted: #6b6560;
+    --border: #ddd8cc;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Crimson Pro', Georgia, serif;
+    min-height: 100vh;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  /* ── LOADING ── */
+  #loading {
+    position: fixed; inset: 0;
+    background: var(--ink);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .loader-text {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.6);
+  }
+
+  .loader-bar {
+    width: 200px; height: 2px;
+    background: rgba(255,255,255,0.1);
+    position: relative; overflow: hidden;
+  }
+
+  .loader-bar::after {
+    content: '';
+    position: absolute;
+    left: -60%; top: 0; width: 60%; height: 100%;
+    background: var(--accent);
+    animation: sweep 1.2s ease-in-out infinite;
+  }
+
+  @keyframes sweep { to { left: 110%; } }
+
+  /* ── HEADER ── */
+  #app { display: none; }
+
+  header {
+    background: var(--ink);
+    padding: 2.5rem 4rem 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border-bottom: 3px solid var(--accent);
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 100% 0%, rgba(200,65,26,0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .header-left h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 900;
+    color: var(--paper);
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+
+  .header-left p {
+    font-style: italic;
+    color: rgba(245,240,232,0.5);
+    font-size: 0.95rem;
+    margin-top: 0.4rem;
+  }
+
+  .updated {
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.3);
+    margin-top: 0.5rem;
+  }
+
+  /* ── TABS ── */
+  .tabs {
+    display: flex;
+    padding: 0 4rem;
+    background: var(--ink);
+    border-bottom: 1px solid #222;
+  }
+
+  .tab {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    border: none;
+    background: transparent;
+    color: rgba(245,240,232,0.4);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: all 0.2s;
+  }
+
+  .tab:hover { color: rgba(245,240,232,0.8); }
+  .tab.active { color: var(--paper); border-bottom-color: var(--accent); }
+
+  .tab .count {
+    display: inline-block;
+    background: rgba(200,65,26,0.3);
+    color: var(--accent);
+    font-size: 0.6rem;
+    padding: 0.1rem 0.4rem;
+    margin-left: 0.5rem;
+    border-radius: 2px;
+  }
+
+  .tab.active .count { background: var(--accent); color: #fff; }
+
+  /* ── CONTENT ── */
+  .content {
+    padding: 3rem 4rem;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .section { display: none; }
+  .section.active { display: block; }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+
+  .controls { display: flex; gap: 0.5rem; align-items: center; }
+  .controls label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  select {
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.9rem;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--ink);
+    cursor: pointer;
+    outline: none;
+  }
+  select:focus { border-color: var(--accent); }
+
+  /* ── GRID ── */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5rem 1.25rem;
+  }
+
+  .card {
+    cursor: pointer;
+    transition: transform 0.25s cubic-bezier(.34,1.56,.64,1);
+    animation: fadeIn 0.4s ease both;
+  }
+
+  .card:hover { transform: translateY(-6px); }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .poster-wrap {
+    position: relative;
+    aspect-ratio: 2/3;
+    overflow: hidden;
+    background: #e8e4dc;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  }
+
+  .poster-img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+
+  .card:hover .poster-img { transform: scale(1.04); }
+
+  .poster-placeholder {
+    position: absolute; inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e8e4dc, #d4cfc7);
+    color: var(--muted);
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .rating-badge {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 0.5rem 0.6rem 0.4rem;
+    background: linear-gradient(to top, rgba(13,13,15,0.95) 0%, rgba(13,13,15,0.6) 70%, transparent 100%);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    z-index: 2;
+  }
+
+  .stars { font-size: 0.7rem; letter-spacing: -1px; line-height: 1; }
+  .star-filled { color: var(--gold); }
+  .star-half   { color: var(--gold); opacity: 0.7; }
+  .star-empty  { color: rgba(255,255,255,0.2); }
+
+  .rating-num {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    color: rgba(245,240,232,0.7);
+    margin-left: 0.1rem;
+  }
+
+  .card-meta { padding: 0.6rem 0.25rem 0; }
+
+  .card-title {
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.95rem;
+    color: var(--ink);
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-year {
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 0.1rem;
+  }
+
+  .empty {
+    text-align: center;
+    padding: 6rem 2rem;
+    color: var(--muted);
+  }
+  .empty p { font-style: italic; font-size: 1.1rem; }
+
+  /* ── MODAL ── */
+  #modal {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(13,13,15,0.85);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    backdrop-filter: blur(4px);
+  }
+
+  #modal.open { display: flex; }
+
+  .modal-inner {
+    background: var(--paper);
+    max-width: 700px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    animation: slideUp 0.3s cubic-bezier(.34,1.56,.64,1);
+  }
+
+  @keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+  }
+
+  .modal-poster-wrap {
+    flex-shrink: 0;
+    width: 160px;
+    aspect-ratio: 2/3;
+    position: relative;
+    background: #e8e4dc;
+  }
+
+  .modal-poster { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .modal-poster-placeholder {
+    position: absolute; inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+
+  .modal-body { flex: 1; min-width: 0; }
+
+  .modal-type {
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  .modal-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
+  }
+
+  .modal-year { font-style: italic; color: var(--muted); margin-bottom: 1rem; font-size: 0.95rem; }
+
+  .modal-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .modal-stars { font-size: 1.1rem; letter-spacing: 1px; }
+  .modal-rating-num { font-family: 'Cinzel', serif; font-size: 0.85rem; color: var(--muted); }
+  .modal-summary { font-size: 0.95rem; line-height: 1.65; color: #3a3530; }
+
+  .modal-close {
+    position: absolute; top: 1rem; right: 1rem;
+    width: 2rem; height: 2rem;
+    background: none; border: none;
+    font-size: 1.3rem; cursor: pointer;
+    color: var(--muted);
+    display: flex; align-items: center; justify-content: center;
+    transition: color 0.2s;
+  }
+  .modal-close:hover { color: var(--ink); }
+
+  @media (max-width: 768px) {
+    header, .tabs, .content { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 1rem; }
+    .modal-inner { flex-direction: column; }
+    .modal-poster-wrap { width: 100%; aspect-ratio: 16/9; }
+  }
+</style>
+</head>
+<body>
+
+<div id="loading">
+  <div class="loader-text">Loading Ratings</div>
+  <div class="loader-bar"></div>
+</div>
+
+<div id="app">
+  <header>
+    <div class="header-left">
+      <h1>My Ratings</h1>
+      <p id="header-sub"></p>
+      <div class="updated" id="updated-at"></div>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="shows" onclick="switchTab('shows')">
+      TV Shows <span class="count" id="shows-count">0</span>
+    </button>
+    <button class="tab" data-tab="movies" onclick="switchTab('movies')">
+      Movies <span class="count" id="movies-count">0</span>
+    </button>
+  </div>
+
+  <div class="content">
+    <div class="section active" id="tab-shows">
+      <div class="bar">
+        <span class="section-title">Television &amp; Anime</span>
+        <div class="controls">
+          <label>Sort</label>
+          <select onchange="sortGrid('shows', this.value)">
+            <option value="rating-desc">Rating ↓</option>
+            <option value="rating-asc">Rating ↑</option>
+            <option value="title-asc">Title A–Z</option>
+            <option value="title-desc">Title Z–A</option>
+            <option value="year-desc">Year ↓</option>
+            <option value="year-asc">Year ↑</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" id="shows-grid"></div>
+      <div class="empty" id="shows-empty" style="display:none">
+        <p>No rated TV shows yet — check back after the first sync runs.</p>
+      </div>
+    </div>
+
+    <div class="section" id="tab-movies">
+      <div class="bar">
+        <span class="section-title">Cinema</span>
+        <div class="controls">
+          <label>Sort</label>
+          <select onchange="sortGrid('movies', this.value)">
+            <option value="rating-desc">Rating ↓</option>
+            <option value="rating-asc">Rating ↑</option>
+            <option value="title-asc">Title A–Z</option>
+            <option value="title-desc">Title Z–A</option>
+            <option value="year-desc">Year ↓</option>
+            <option value="year-asc">Year ↑</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" id="movies-grid"></div>
+      <div class="empty" id="movies-empty" style="display:none">
+        <p>No rated movies yet — check back after the first sync runs.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal" onclick="closeModal(event)">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">✕</button>
+    <div class="modal-poster-wrap">
+      <img class="modal-poster" id="modal-poster" src="" alt=""
+        onerror="this.style.display='none'; document.getElementById('modal-poster-ph').style.display='flex'" />
+      <div class="modal-poster-placeholder" id="modal-poster-ph">No Image</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-type" id="modal-type"></div>
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-year" id="modal-year"></div>
+      <div class="modal-rating">
+        <div class="modal-stars" id="modal-stars"></div>
+        <div class="modal-rating-num" id="modal-rating-num"></div>
+      </div>
+      <div class="modal-summary" id="modal-summary"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let allShows = [], allMovies = [];
+
+  async function init() {
+    try {
+      const res  = await fetch('data.json?t=' + Date.now());
+      const data = await res.json();
+
+      allShows  = data.shows  || [];
+      allMovies = data.movies || [];
+
+      renderGrid('shows',  allShows,  'rating-desc');
+      renderGrid('movies', allMovies, 'rating-desc');
+
+      document.getElementById('shows-count').textContent  = allShows.length;
+      document.getElementById('movies-count').textContent = allMovies.length;
+      document.getElementById('header-sub').textContent   =
+        `${allShows.length + allMovies.length} rated titles`;
+
+      if (data.updatedAt) {
+        const d = new Date(data.updatedAt);
+        document.getElementById('updated-at').textContent =
+          'Last updated ' + d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      }
+    } catch (e) {
+      console.error('Failed to load data.json:', e);
+    }
+
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+  }
+
+  function renderGrid(type, items, sort) {
+    const grid  = document.getElementById(`${type}-grid`);
+    const empty = document.getElementById(`${type}-empty`);
+    const sorted = sortItems([...items], sort);
+
+    if (!sorted.length) {
+      grid.innerHTML = '';
+      empty.style.display = 'block';
+      return;
+    }
+    empty.style.display = 'none';
+
+    grid.innerHTML = sorted.map((item, i) => {
+      const rating = parseFloat(item.userRating);
+      const stars  = renderStars(rating);
+      const title  = esc(item.title || 'Untitled');
+      const year   = item.year || '';
+      const poster = item.poster || '';
+
+      return `<div class="card" style="animation-delay:${Math.min(i * 0.03, 0.6)}s"
+                   onclick='openModal(${JSON.stringify(JSON.stringify(item))})'>
+        <div class="poster-wrap">
+          ${poster
+            ? `<img class="poster-img" src="${poster}" alt="${title}" loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />`
+            : ''}
+          <div class="poster-placeholder" style="${poster ? '' : 'display:flex'}">${title}</div>
+          <div class="rating-badge">
+            <div class="stars">${stars}</div>
+            <span class="rating-num">${rating.toFixed(1)}</span>
+          </div>
+        </div>
+        <div class="card-meta">
+          <div class="card-title" title="${title}">${title}</div>
+          ${year ? `<div class="card-year">${year}</div>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  function renderStars(r) {
+    const n = r / 2;
+    return [1,2,3,4,5].map(i =>
+      n >= i       ? '<span class="star-filled">★</span>'
+      : n >= i-0.5 ? '<span class="star-half">★</span>'
+                   : '<span class="star-empty">★</span>'
+    ).join('');
+  }
+
+  function sortItems(items, sort) {
+    return items.sort((a, b) => {
+      if (sort === 'rating-desc') return b.userRating - a.userRating;
+      if (sort === 'rating-asc')  return a.userRating - b.userRating;
+      if (sort === 'title-asc')   return (a.title||'').localeCompare(b.title||'');
+      if (sort === 'title-desc')  return (b.title||'').localeCompare(a.title||'');
+      if (sort === 'year-desc')   return (b.year||0) - (a.year||0);
+      if (sort === 'year-asc')    return (a.year||0) - (b.year||0);
+      return 0;
+    });
+  }
+
+  function sortGrid(type, sort) {
+    renderGrid(type, type === 'shows' ? allShows : allMovies, sort);
+  }
+
+  function switchTab(tab) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+    document.querySelectorAll('.section').forEach(s => s.classList.toggle('active', s.id === `tab-${tab}`));
+  }
+
+  function openModal(jsonStr) {
+    const item   = JSON.parse(jsonStr);
+    const rating = parseFloat(item.userRating);
+
+    const posterEl = document.getElementById('modal-poster');
+    const posterPh = document.getElementById('modal-poster-ph');
+    if (item.poster) {
+      posterEl.src = item.poster;
+      posterEl.style.display = 'block';
+      posterPh.style.display = 'none';
+    } else {
+      posterEl.style.display = 'none';
+      posterPh.style.display = 'flex';
+    }
+
+    document.getElementById('modal-type').textContent       = item.type === 'show' ? 'Television Series' : 'Film';
+    document.getElementById('modal-title').textContent      = item.title || 'Untitled';
+    document.getElementById('modal-year').textContent       =
+      item.year ? `${item.year}${item.studio ? ' · ' + item.studio : ''}` : '';
+    document.getElementById('modal-stars').innerHTML        = renderStars(rating);
+    document.getElementById('modal-rating-num').textContent = `${rating.toFixed(1)} / 10`;
+    document.getElementById('modal-summary').textContent    = item.summary || 'No summary available.';
+
+    document.getElementById('modal').classList.add('open');
+  }
+
+  function closeModal(e) {
+    if (e.target === document.getElementById('modal'))
+      document.getElementById('modal').classList.remove('open');
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') document.getElementById('modal').classList.remove('open');
+  });
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  init();
+</script>
+</body>
+</html>
