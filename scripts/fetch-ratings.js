@@ -82,18 +82,33 @@ async function main() {
     console.log(`  ${rated.length} rated items found.`);
 
     for (const item of rated) {
-      const poster = await downloadPoster(item.thumb, item.ratingKey);
+      // Fetch detailed metadata for this specific item to bypass Plex's 2-genre summary limit
+      let detailedItem = item;
+      try {
+        const detailData = await plexGet(`/library/metadata/${item.ratingKey}`);
+        if (detailData.MediaContainer && detailData.MediaContainer.Metadata) {
+          detailedItem = detailData.MediaContainer.Metadata[0];
+        }
+      } catch (e) {
+        console.warn(`Could not fetch details for ${item.ratingKey}, using basic data.`);
+      }
+
+      const poster = await downloadPoster(detailedItem.thumb || item.thumb, item.ratingKey);
+      
+      // Grab all genres and cap at 5
+      const allGenres = (detailedItem.Genre || []).map(g => g.tag);
+
       const entry  = {
         ratingKey:  item.ratingKey,
-        title:      item.title              || 'Untitled',
-        year:       item.year               || null,
-        summary:    item.summary            || '',
+        title:      detailedItem.title              || 'Untitled',
+        year:       detailedItem.year               || null,
+        summary:    detailedItem.summary            || '',
         userRating: parseFloat(item.userRating),
-        studio:     item.studio             || null,
-        contentRating: item.contentRating   || null,
-        duration:   item.duration           || null,
-        genres:     (item.Genre || []).map(g => g.tag),
-        imdbId:     extractImdbId(item),
+        studio:     detailedItem.studio             || null,
+        contentRating: detailedItem.contentRating   || null,
+        duration:   detailedItem.duration           || null,
+        genres:     allGenres.slice(0, 5),
+        imdbId:     extractImdbId(detailedItem),
         type:       item.type,
         poster,
       };
