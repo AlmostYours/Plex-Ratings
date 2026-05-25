@@ -1,5 +1,4 @@
-const fs   = require('fs');
-const path = require('path');
+const fs = require('fs');
 
 const PLEX_URL   = process.env.PLEX_URL;
 const PLEX_TOKEN = process.env.PLEX_TOKEN;
@@ -9,6 +8,21 @@ if (!PLEX_URL || !PLEX_TOKEN) {
   process.exit(1);
 }
 
+// ── Write config.json from GitHub Variables ──────────────────────────────────
+// Fall back to sensible defaults if a variable isn't set.
+const config = {
+  ownerName:          process.env.OWNER_NAME           || 'My',
+  showsTabLabel:      process.env.SHOWS_TAB_LABEL      || 'TV Shows',
+  showsSectionLabel:  process.env.SHOWS_SECTION_LABEL  || 'TV Shows',
+  moviesTabLabel:     process.env.MOVIES_TAB_LABEL     || 'Movies',
+  moviesSectionLabel: process.env.MOVIES_SECTION_LABEL || 'Cinema',
+  defaultTheme:       process.env.DEFAULT_THEME        || 'system',
+};
+
+fs.writeFileSync('config.json', JSON.stringify(config, null, 2));
+console.log('config.json written:', config);
+
+// ── Plex helpers ─────────────────────────────────────────────────────────────
 async function plexGet(p) {
   const sep = p.includes('?') ? '&' : '?';
   const url = `${PLEX_URL}${p}${sep}X-Plex-Token=${PLEX_TOKEN}&X-Plex-Container-Start=0&X-Plex-Container-Size=5000`;
@@ -35,6 +49,7 @@ async function downloadPoster(thumb, ratingKey) {
   }
 }
 
+// ── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
   console.log('Connecting to Plex...');
   const libData  = await plexGet('/library/sections');
@@ -57,32 +72,22 @@ async function main() {
       const poster = await downloadPoster(item.thumb, item.ratingKey);
       const entry  = {
         ratingKey:  item.ratingKey,
-        title:      item.title      || 'Untitled',
-        year:       item.year       || null,
-        summary:    item.summary    || '',
+        title:      item.title   || 'Untitled',
+        year:       item.year    || null,
+        summary:    item.summary || '',
         userRating: parseFloat(item.userRating),
-        studio:     item.studio     || null,
+        studio:     item.studio  || null,
         type:       item.type,
         poster,
       };
-
       if (sec.type === 'show')  shows.push(entry);
       else                      movies.push(entry);
     }
   }
 
-  const output = {
-    shows,
-    movies,
-    updatedAt: new Date().toISOString(),
-  };
-
+  const output = { shows, movies, updatedAt: new Date().toISOString() };
   fs.writeFileSync('data.json', JSON.stringify(output, null, 2));
-  console.log(`Done. ${shows.length} shows and ${movies.length} movies written to data.json.`);
-  console.log(`${shows.length + movies.length} posters saved to /posters.`);
+  console.log(`Done. ${shows.length} shows, ${movies.length} movies written.`);
 }
 
-main().catch(err => {
-  console.error('Fatal error:', err);
-  process.exit(1);
-});
+main().catch(err => { console.error('Fatal error:', err); process.exit(1); });
