@@ -2602,6 +2602,25 @@
       "poster": "posters/7715.jpg"
     },
     {
+      "ratingKey": "8264",
+      "title": "The Dark Knight",
+      "year": 2008,
+      "summary": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "userRating": 8,
+      "studio": "Warner Bros. Pictures",
+      "contentRating": "PG-13",
+      "duration": 9133395,
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "imdbId": "tt0468569",
+      "type": "movie",
+      "poster": "posters/8264.jpg"
+    },
+    {
       "ratingKey": "8265",
       "title": "The Dark Knight Rises",
       "year": 2012,
@@ -5073,5 +5092,5 @@
       "poster": "posters/13528.jpg"
     }
   ],
-  "updatedAt": "2026-05-25T06:03:41.497Z"
+  "updatedAt": "2026-05-25T06:34:59.553Z"
 }
