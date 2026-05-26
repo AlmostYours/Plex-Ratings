@@ -71,16 +71,46 @@ function extractTmdbId(item) {
 }
 
 // Fetch JustWatch link and provider logos from TMDB
-async function getWatchProviders(tmdbId, type) {
-  if (!TMDB_API_KEY || !tmdbId) return null;
+async function getWatchProviders(tmdbId, imdbId, type, title) {
+  // Debug: Check if the key made it into the environment
+  if (!TMDB_API_KEY) {
+    console.log(`[${title}] ⚠️ TMDB_API_KEY is missing from environment!`);
+    return null;
+  }
+  if (!tmdbId && !imdbId) {
+    console.log(`[${title}] ⚠️ No TMDB or IMDB ID available in Plex.`);
+    return null;
+  }
+
   try {
     const tmdbType = type === 'movie' ? 'movie' : 'tv';
-    const provRes = await fetch(`https://api.themoviedb.org/3/${tmdbType}/${tmdbId}/watch/providers?api_key=${TMDB_API_KEY}`);
-    
-    if (!provRes.ok) return null;
-    const provData = await provRes.json();
+    let finalTmdbId = tmdbId;
 
-    // Extract US streaming options 
+    // Fallback: If Plex didn't give us a TMDB ID, use IMDB ID to search TMDB for it
+    if (!finalTmdbId && imdbId) {
+      const findRes = await fetch(`https://api.themoviedb.org/3/find/${imdbId}?api_key=${TMDB_API_KEY}&external_source=imdb_id`);
+      if (findRes.ok) {
+        const findData = await findRes.json();
+        const results = tmdbType === 'movie' ? findData.movie_results : findData.tv_results;
+        if (results && results.length > 0) {
+          finalTmdbId = results[0].id;
+        }
+      }
+    }
+
+    if (!finalTmdbId) {
+      console.log(`[${title}] ⚠️ Could not resolve TMDB ID.`);
+      return null;
+    }
+
+    // Fetch the streaming providers
+    const provRes = await fetch(`https://api.themoviedb.org/3/${tmdbType}/${finalTmdbId}/watch/providers?api_key=${TMDB_API_KEY}`);
+    if (!provRes.ok) {
+      console.log(`[${title}] ⚠️ TMDB API Error: ${provRes.status}`);
+      return null;
+    }
+    
+    const provData = await provRes.json();
     const usData = provData.results?.US;
     if (!usData) return null;
 
@@ -93,10 +123,21 @@ async function getWatchProviders(tmdbId, type) {
         seen.add(s.provider_id);
         uniqueStreams.push({
           name: s.provider_name,
-          logo: `https://image.tmdb.org/t/p/original${s.logo_path}` // Grab the graphic logo
+          logo: `https://image.tmdb.org/t/p/original${s.logo_path}`
         });
       }
     }
+
+    return uniqueStreams.length > 0 ? {
+      link: usData.link,
+      providers: uniqueStreams
+    } : null;
+
+  } catch (e) {
+    console.log(`[${title}] ⚠️ Failed to fetch TMDB providers: ${e.message}`);
+    return null;
+  }
+}
 
     return {
       link: usData.link,
