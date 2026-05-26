@@ -54,10 +54,6 @@
           {
             "name": "Amazon Prime Video",
             "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video Free with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/gZlCYHPx9a0TRUCEeTvHXBf9ibX.jpg"
           }
         ]
       }
@@ -1463,10 +1459,6 @@
           {
             "name": "The Roku Channel",
             "logo": "https://image.tmdb.org/t/p/original/wQzSN83BnWVgO7xEh0SeTVqtrFv.jpg"
-          },
-          {
-            "name": "Amazon Prime Video Free with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/gZlCYHPx9a0TRUCEeTvHXBf9ibX.jpg"
           },
           {
             "name": "Tubi TV",
@@ -5325,10 +5317,6 @@
           {
             "name": "Amazon Prime Video",
             "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video Free with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/gZlCYHPx9a0TRUCEeTvHXBf9ibX.jpg"
           }
         ]
       }
@@ -5394,10 +5382,6 @@
           {
             "name": "Shout! Factory TV",
             "logo": "https://image.tmdb.org/t/p/original/y9jFndski0fRO4MHh3yg5PIL9ZI.jpg"
-          },
-          {
-            "name": "Amazon Prime Video Free with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/gZlCYHPx9a0TRUCEeTvHXBf9ibX.jpg"
           },
           {
             "name": "Tubi TV",
@@ -6436,10 +6420,6 @@
             "logo": "https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg"
           },
           {
-            "name": "Amazon Prime Video Free with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/gZlCYHPx9a0TRUCEeTvHXBf9ibX.jpg"
-          },
-          {
             "name": "Tubi TV",
             "logo": "https://image.tmdb.org/t/p/original/zLYr7OPvpskMA4S79E3vlCi71iC.jpg"
           }
@@ -7145,10 +7125,6 @@
           {
             "name": "Pluto TV",
             "logo": "https://image.tmdb.org/t/p/original/dB8G41Q6tSL5NBisrIeqByfepBc.jpg"
-          },
-          {
-            "name": "Amazon Prime Video Free with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/gZlCYHPx9a0TRUCEeTvHXBf9ibX.jpg"
           },
           {
             "name": "Tubi TV",
@@ -7970,10 +7946,6 @@
             "logo": "https://image.tmdb.org/t/p/original/dB8G41Q6tSL5NBisrIeqByfepBc.jpg"
           },
           {
-            "name": "Amazon Prime Video Free with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/gZlCYHPx9a0TRUCEeTvHXBf9ibX.jpg"
-          },
-          {
             "name": "Tubi TV",
             "logo": "https://image.tmdb.org/t/p/original/zLYr7OPvpskMA4S79E3vlCi71iC.jpg"
           }
@@ -8225,5 +8197,5 @@
       }
     }
   ],
-  "updatedAt": "2026-05-26T04:53:26.555Z"
+  "updatedAt": "2026-05-26T05:04:11.384Z"
 }
