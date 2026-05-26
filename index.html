@@ -565,6 +565,14 @@
   .platform-tag.offer-free { border-color: #3cb87a; color: #3cb87a; }
   .platform-tag.offer-buy  { border-color: var(--muted); color: var(--muted); }
 
+  .platform-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
   .modal-close {
     position: absolute; top: 1rem; right: 1rem;
     width: 2rem; height: 2rem;
@@ -977,19 +985,42 @@
     // Summary
     document.getElementById('modal-summary').textContent = item.summary || 'No summary available.';
 
-    // Links
+    // Where to Watch Logos
+    const whereEl = document.getElementById('modal-where');
+    const platformsEl = document.getElementById('modal-platforms');
+    let exactJustWatchLink = null;
+
+    if (item.whereToWatch) {
+      exactJustWatchLink = item.whereToWatch.link;
+      if (item.whereToWatch.providers && item.whereToWatch.providers.length > 0) {
+        platformsEl.innerHTML = item.whereToWatch.providers.map(p => {
+          // Display the graphic icons instead of text
+          return `<img src="${p.logo}" alt="${esc(p.name)}" title="${esc(p.name)}" class="platform-logo" />`;
+        }).join('');
+        whereEl.style.display = 'block';
+      } else {
+        whereEl.style.display = 'none';
+      }
+    } else {
+      whereEl.style.display = 'none';
+    }
+
+    // Links Row
     const linksEl = document.getElementById('modal-links');
     const links = [];
+    
+    // 1. IMDb Button
     if (item.imdbId) {
-      links.push(`<a class="modal-link modal-link-imdb" href="https://www.imdb.com/title/${item.imdbId}/" target="_blank" rel="noopener">
-        IMDb ↗
-      </a>`);
+      links.push(`<a class="modal-link modal-link-imdb" href="https://www.imdb.com/title/${item.imdbId}/" target="_blank" rel="noopener">IMDb ↗</a>`);
     }
-    // Google search fallback — always useful
+
+    // 2. Where to Watch Button (Uses exact TMDB link if available, otherwise falls back to a JustWatch Search)
+    const jwUrl = exactJustWatchLink || `https://www.justwatch.com/us/search?q=${encodeURIComponent(item.title)}`;
+    links.push(`<a class="modal-link modal-link-justwatch" href="${jwUrl}" target="_blank" rel="noopener">Where to Watch ↗</a>`);
+
+    // 3. Google Search Button
     const searchQ = encodeURIComponent(`${item.title}${item.year ? ' ' + item.year : ''}`);
-    links.push(`<a class="modal-link modal-link-search" href="https://www.google.com/search?q=${searchQ}" target="_blank" rel="noopener">
-      Search ↗
-    </a>`);
+    links.push(`<a class="modal-link modal-link-search" href="https://www.google.com/search?q=${searchQ}" target="_blank" rel="noopener">Search ↗</a>`);
 
     linksEl.innerHTML = links.join('');
     linksEl.style.display = links.length ? 'flex' : 'none';
