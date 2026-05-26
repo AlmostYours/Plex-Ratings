@@ -72,43 +72,29 @@ function extractTmdbId(item) {
 
 // Fetch JustWatch link and provider logos from TMDB
 async function getWatchProviders(tmdbId, imdbId, type, title) {
-  // Debug: Check if the key made it into the environment
   if (!TMDB_API_KEY) {
     console.log(`[${title}] ⚠️ TMDB_API_KEY is missing from environment!`);
     return null;
   }
-  if (!tmdbId && !imdbId) {
-    console.log(`[${title}] ⚠️ No TMDB or IMDB ID available in Plex.`);
-    return null;
-  }
+  if (!tmdbId && !imdbId) return null;
 
   try {
     const tmdbType = type === 'movie' ? 'movie' : 'tv';
     let finalTmdbId = tmdbId;
 
-    // Fallback: If Plex didn't give us a TMDB ID, use IMDB ID to search TMDB for it
     if (!finalTmdbId && imdbId) {
       const findRes = await fetch(`https://api.themoviedb.org/3/find/${imdbId}?api_key=${TMDB_API_KEY}&external_source=imdb_id`);
       if (findRes.ok) {
         const findData = await findRes.json();
         const results = tmdbType === 'movie' ? findData.movie_results : findData.tv_results;
-        if (results && results.length > 0) {
-          finalTmdbId = results[0].id;
-        }
+        if (results && results.length > 0) finalTmdbId = results[0].id;
       }
     }
 
-    if (!finalTmdbId) {
-      console.log(`[${title}] ⚠️ Could not resolve TMDB ID.`);
-      return null;
-    }
+    if (!finalTmdbId) return null;
 
-    // Fetch the streaming providers
     const provRes = await fetch(`https://api.themoviedb.org/3/${tmdbType}/${finalTmdbId}/watch/providers?api_key=${TMDB_API_KEY}`);
-    if (!provRes.ok) {
-      console.log(`[${title}] ⚠️ TMDB API Error: ${provRes.status}`);
-      return null;
-    }
+    if (!provRes.ok) return null;
     
     const provData = await provRes.json();
     const usData = provData.results?.US;
@@ -116,17 +102,34 @@ async function getWatchProviders(tmdbId, imdbId, type, title) {
 
     const streams = [...(usData.flatrate || []), ...(usData.free || []), ...(usData.ads || [])];
     
-    const uniqueStreams = [];
-    const seen = new Set();
+    // Smart Deduplication Logic
+    const providerMap = new Map();
     for (const s of streams) {
-      if (!seen.has(s.provider_id)) {
-        seen.add(s.provider_id);
-        uniqueStreams.push({
-          name: s.provider_name,
-          logo: `https://image.tmdb.org/t/p/original${s.logo_path}`
-        });
+      // Find the "root" name by removing common TMDB channel/ad suffixes
+      const baseName = s.provider_name.toLowerCase()
+        .replace(/\s*\(?basic\s*with\s*ads\)?/i, '')
+        .replace(/\s*\(?with\s*ads\)?/i, '')
+        .replace(/\s*amazon\s*channel/i, '')
+        .replace(/\s*roku\s*premium\s*channel/i, '')
+        .replace(/\s*apple\s*tv\s*channel/i, '')
+        .replace(/\s*fubo\s*channel/i, '')
+        .trim();
+        
+      if (!providerMap.has(baseName)) {
+        providerMap.set(baseName, { name: s.provider_name, logo: s.logo_path });
+      } else {
+        // If a duplicate root is found, keep the shortest/cleanest title 
+        // (e.g., "Netflix" wins over "Netflix with Ads")
+        if (s.provider_name.length < providerMap.get(baseName).name.length) {
+          providerMap.set(baseName, { name: s.provider_name, logo: s.logo_path });
+        }
       }
     }
+
+    const uniqueStreams = Array.from(providerMap.values()).map(p => ({
+      name: p.name,
+      logo: `https://image.tmdb.org/t/p/original${p.logo}`
+    }));
 
     return uniqueStreams.length > 0 ? {
       link: usData.link,
