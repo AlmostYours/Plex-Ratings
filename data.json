@@ -7219,6 +7219,10 @@
           {
             "name": "HBO Max",
             "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
+          },
+          {
+            "name": "Rakuten Viki",
+            "logo": "https://image.tmdb.org/t/p/original/73uV3YooOA8gD9YQTXFj2XakZWA.jpg"
           }
         ]
       }
@@ -8226,5 +8230,5 @@
       }
     }
   ],
-  "updatedAt": "2026-05-26T09:02:33.517Z"
+  "updatedAt": "2026-05-26T14:30:28.798Z"
 }
