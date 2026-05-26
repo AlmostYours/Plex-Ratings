@@ -985,45 +985,51 @@
     // Summary
     document.getElementById('modal-summary').textContent = item.summary || 'No summary available.';
 
-    // Where to Watch Logos
-    const whereEl = document.getElementById('modal-where');
-    const platformsEl = document.getElementById('modal-platforms');
-    let exactJustWatchLink = null;
-
-    if (item.whereToWatch) {
-      exactJustWatchLink = item.whereToWatch.link;
-      if (item.whereToWatch.providers && item.whereToWatch.providers.length > 0) {
-        platformsEl.innerHTML = item.whereToWatch.providers.map(p => {
-          // Display the graphic icons instead of text
-          return `<img src="${p.logo}" alt="${esc(p.name)}" title="${esc(p.name)}" class="platform-logo" />`;
-        }).join('');
-        whereEl.style.display = 'block';
-      } else {
-        whereEl.style.display = 'none';
-      }
-    } else {
-      whereEl.style.display = 'none';
-    }
-
-    // Links Row
+    // 1. Links Row (Built first so we know where to inject the logos)
     const linksEl = document.getElementById('modal-links');
     const links = [];
     
-    // 1. IMDb Button
     if (item.imdbId) {
       links.push(`<a class="modal-link modal-link-imdb" href="https://www.imdb.com/title/${item.imdbId}/" target="_blank" rel="noopener">IMDb ↗</a>`);
     }
 
-    // 2. Where to Watch Button (Uses exact TMDB link if available, otherwise falls back to a JustWatch Search)
+    const exactJustWatchLink = item.whereToWatch ? item.whereToWatch.link : null;
     const jwUrl = exactJustWatchLink || `https://www.justwatch.com/us/search?q=${encodeURIComponent(item.title)}`;
     links.push(`<a class="modal-link modal-link-justwatch" href="${jwUrl}" target="_blank" rel="noopener">Where to Watch ↗</a>`);
 
-    // 3. Google Search Button
     const searchQ = encodeURIComponent(`${item.title}${item.year ? ' ' + item.year : ''}`);
     links.push(`<a class="modal-link modal-link-search" href="https://www.google.com/search?q=${searchQ}" target="_blank" rel="noopener">Search ↗</a>`);
 
     linksEl.innerHTML = links.join('');
     linksEl.style.display = links.length ? 'flex' : 'none';
+
+    // 2. Where to Watch Logos (Clean, Headerless, Above the Buttons)
+    // Completely hide the old HTML container to eliminate the text header
+    const oldWhereEl = document.getElementById('modal-where');
+    if (oldWhereEl) oldWhereEl.style.display = 'none';
+
+    // Create a new logo container perfectly positioned above the links
+    let dynamicLogos = document.getElementById('modal-clean-logos');
+    if (!dynamicLogos) {
+      dynamicLogos = document.createElement('div');
+      dynamicLogos.id = 'modal-clean-logos';
+      dynamicLogos.style.display = 'flex';
+      dynamicLogos.style.flexWrap = 'wrap';
+      dynamicLogos.style.gap = '10px';
+      dynamicLogos.style.marginBottom = '15px'; // Perfect spacing above the buttons
+      
+      // Inject it into the DOM directly underneath the divider, above the buttons
+      linksEl.parentNode.insertBefore(dynamicLogos, linksEl);
+    }
+
+    if (item.whereToWatch && item.whereToWatch.providers && item.whereToWatch.providers.length > 0) {
+      dynamicLogos.innerHTML = item.whereToWatch.providers.map(p => {
+        return `<img src="${p.logo}" alt="${esc(p.name)}" title="${esc(p.name)}" class="platform-logo" />`;
+      }).join('');
+      dynamicLogos.style.display = 'flex';
+    } else {
+      dynamicLogos.style.display = 'none';
+    }
 
     document.getElementById('modal').classList.add('open');
   }
