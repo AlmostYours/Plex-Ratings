@@ -139,17 +139,6 @@ async function getWatchProviders(tmdbId, imdbId, type, title) {
   }
 }
 
-    return {
-      link: usData.link,
-      providers: uniqueStreams
-    };
-
-  } catch (e) {
-    console.warn(`Failed to fetch TMDB providers for ${tmdbId}:`, e.message);
-    return null;
-  }
-}
-
 // ── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
   console.log('Connecting to Plex...');
