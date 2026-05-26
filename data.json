@@ -99,7 +99,7 @@
       "ratingKey": "16596",
       "title": "86 EIGHTY-SIX",
       "year": 2021,
-      "summary": "The Republic of San Magnolia has been attacked by its neighbor, the Empire.",
+      "summary": "A gripping sci-fi war drama that follows the brutal conflict between the Republic of San Magnolia and the neighboring Giadian Empire's autonomous Legion forces. In this dystopian future, the Republic proudly claims its \"unmanned\" Juggernaut drones are winning the war with zero casualties—while hiding the truth that the pilots are the persecuted \"Eighty-Six,\" a racial minority stripped of rights and forced to fight from internment camps. The story centers on the unlikely bond between Vladilena \"Lena\" Milizé, a Republic Handler from the privileged Alba class, and Shinei \"Undertaker\" Nouzen, the stoic leader of the elite Spearhead Squadron on the front lines.",
       "userRating": 9,
       "studio": "A-1 Pictures",
       "contentRating": "TV-MA",
@@ -3629,6 +3629,35 @@
       "poster": "posters/721.jpg",
       "whereToWatch": {
         "link": "https://www.themoviedb.org/movie/19995-avatar/watch?locale=US",
+        "providers": [
+          {
+            "name": "Disney Plus",
+            "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "ratingKey": "724",
+      "title": "Avatar: The Way of Water",
+      "year": 2022,
+      "summary": "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
+      "userRating": 9,
+      "studio": "20th Century Studios",
+      "contentRating": "PG-13",
+      "duration": 11554208,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction",
+        "Fantasy",
+        "Animation"
+      ],
+      "imdbId": "tt1630029",
+      "type": "movie",
+      "poster": "posters/724.jpg",
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/movie/76600-avatar-the-way-of-water/watch?locale=US",
         "providers": [
           {
             "name": "Disney Plus",
@@ -8197,5 +8226,5 @@
       }
     }
   ],
-  "updatedAt": "2026-05-26T05:44:23.389Z"
+  "updatedAt": "2026-05-26T09:02:33.517Z"
 }
