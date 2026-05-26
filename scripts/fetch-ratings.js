@@ -61,6 +61,54 @@ function extractImdbId(item) {
   return null;
 }
 
+// Extract TMDB ID from Plex's Guid array
+function extractTmdbId(item) {
+  if (Array.isArray(item.Guid)) {
+    const g = item.Guid.find(g => g.id?.startsWith('tmdb://'));
+    if (g) return g.id.replace('tmdb://', '');
+  }
+  return null;
+}
+
+// Fetch JustWatch link and provider logos from TMDB
+async function getWatchProviders(tmdbId, type) {
+  if (!TMDB_API_KEY || !tmdbId) return null;
+  try {
+    const tmdbType = type === 'movie' ? 'movie' : 'tv';
+    const provRes = await fetch(`https://api.themoviedb.org/3/${tmdbType}/${tmdbId}/watch/providers?api_key=${TMDB_API_KEY}`);
+    
+    if (!provRes.ok) return null;
+    const provData = await provRes.json();
+
+    // Extract US streaming options 
+    const usData = provData.results?.US;
+    if (!usData) return null;
+
+    const streams = [...(usData.flatrate || []), ...(usData.free || []), ...(usData.ads || [])];
+    
+    const uniqueStreams = [];
+    const seen = new Set();
+    for (const s of streams) {
+      if (!seen.has(s.provider_id)) {
+        seen.add(s.provider_id);
+        uniqueStreams.push({
+          name: s.provider_name,
+          logo: `https://image.tmdb.org/t/p/original${s.logo_path}` // Grab the graphic logo
+        });
+      }
+    }
+
+    return {
+      link: usData.link,
+      providers: uniqueStreams
+    };
+
+  } catch (e) {
+    console.warn(`Failed to fetch TMDB providers for ${tmdbId}:`, e.message);
+    return null;
+  }
+}
+
 // ── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
   console.log('Connecting to Plex...');
@@ -98,6 +146,11 @@ async function main() {
       
       // Grab all genres and cap at 5
       const allGenres = (detailedItem.Genre || []).map(g => g.tag);
+      const imdbId = extractImdbId(detailedItem) || extractImdbId(item);
+
+      // Grab TMDB ID and fetch Where to Watch data
+      const tmdbId = extractTmdbId(detailedItem) || extractTmdbId(item);
+      const watchData = await getWatchProviders(tmdbId, item.type);
 
       const entry  = {
         ratingKey:  item.ratingKey,
@@ -112,6 +165,7 @@ async function main() {
         imdbId:     extractImdbId(detailedItem),
         type:       item.type,
         poster,
+        whereToWatch: watchData
       };
       if (sec.type === 'show')  shows.push(entry);
       else                      movies.push(entry);
