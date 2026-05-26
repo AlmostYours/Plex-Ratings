@@ -191,7 +191,7 @@ async function main() {
 
       // Grab TMDB ID and fetch Where to Watch data
       const tmdbId = extractTmdbId(detailedItem) || extractTmdbId(item);
-      const watchData = await getWatchProviders(tmdbId, item.type);
+      const watchData = await getWatchProviders(tmdbId, imdbId, item.type, detailedItem.title || item.title);
 
       const entry  = {
         ratingKey:  item.ratingKey,
