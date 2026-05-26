@@ -497,10 +497,22 @@
   }
 
   /* Links row */
+  .modal-footer {
+    border-top: 1px solid var(--border);
+    padding-top: 0.85rem;
+    margin-top: auto;
+  }
+
+  /* Logos row sits above the buttons */
+  .modal-logos {
+    display: none;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
   .modal-links {
     display: flex; gap: 0.6rem; flex-wrap: wrap;
-    padding-top: 0.85rem;
-    border-top: 1px solid var(--border);
   }
 
   .modal-link {
@@ -724,7 +736,10 @@
         <div class="modal-where-label">Where to Watch</div>
         <div class="modal-platforms" id="modal-platforms"></div>
       </div>
-      <div class="modal-links"   id="modal-links"></div>
+      <div class="modal-footer">
+        <div class="modal-logos" id="modal-logos"></div>
+        <div class="modal-links" id="modal-links"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -1003,32 +1018,17 @@
     linksEl.innerHTML = links.join('');
     linksEl.style.display = links.length ? 'flex' : 'none';
 
-    // 2. Where to Watch Logos (Clean, Headerless, Above the Buttons)
-    // Completely hide the old HTML container to eliminate the text header
-    const oldWhereEl = document.getElementById('modal-where');
-    if (oldWhereEl) oldWhereEl.style.display = 'none';
-
-    // Create a new logo container perfectly positioned above the links
-    let dynamicLogos = document.getElementById('modal-clean-logos');
-    if (!dynamicLogos) {
-      dynamicLogos = document.createElement('div');
-      dynamicLogos.id = 'modal-clean-logos';
-      dynamicLogos.style.display = 'flex';
-      dynamicLogos.style.flexWrap = 'wrap';
-      dynamicLogos.style.gap = '10px';
-      dynamicLogos.style.marginBottom = '15px'; // Perfect spacing above the buttons
-      
-      // Inject it into the DOM directly underneath the divider, above the buttons
-      linksEl.parentNode.insertBefore(dynamicLogos, linksEl);
-    }
-
-    if (item.whereToWatch && item.whereToWatch.providers && item.whereToWatch.providers.length > 0) {
-      dynamicLogos.innerHTML = item.whereToWatch.providers.map(p => {
-        return `<img src="${p.logo}" alt="${esc(p.name)}" title="${esc(p.name)}" class="platform-logo" />`;
-      }).join('');
-      dynamicLogos.style.display = 'flex';
+    // Streaming logos — above the buttons, below the dividing line
+    const logosEl  = document.getElementById('modal-logos');
+    const providers = item.whereToWatch?.providers || [];
+    if (providers.length) {
+      logosEl.innerHTML = providers.map(p =>
+        `<img src="${esc(p.logo)}" alt="${esc(p.name)}" title="${esc(p.name)}" class="platform-logo" />`
+      ).join('');
+      logosEl.style.display = 'flex';
     } else {
-      dynamicLogos.style.display = 'none';
+      logosEl.innerHTML = '';
+      logosEl.style.display = 'none';
     }
 
     document.getElementById('modal').classList.add('open');
