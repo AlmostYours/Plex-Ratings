@@ -75,8 +75,9 @@ function extractTmdbId(item) {
 function normalizeProviderName(name) {
   return name
     .toLowerCase()
-    .replace(/\+/g, 'plus')               // "Paramount+" → "paramountplus"
-    .replace(/\s*\([^)]*\)/g, '')         // remove anything in parentheses
+    .replace(/\+/g, 'plus')                    // "Paramount+" → "paramountplus"
+    .replace(/\s*\([^)]*\)/g, '')              // remove anything in parentheses
+    .replace(/\bstandard\b/gi, '')             // "Netflix Standard with Ads"
     .replace(/\bwith\s+ads\b/gi, '')
     .replace(/\bno\s+ads\b/gi, '')
     .replace(/\bad[-\s]?free\b/gi, '')
@@ -91,7 +92,7 @@ function normalizeProviderName(name) {
     .replace(/\broku\b/gi, '')
     .replace(/\bfubo\s+channel\b/gi, '')
     .replace(/\bchannel\b/gi, '')
-    .replace(/\s+/g, '')                  // collapse all remaining whitespace
+    .replace(/\s+/g, '')                        // collapse all remaining whitespace
     .trim();
 }
 
@@ -126,21 +127,21 @@ async function getWatchProviders(tmdbId, imdbId, type, title) {
     if (!usData) return null;
 
     // Combine flatrate, free, and ad-supported streams
-    const streams = [
+        const streams = [
       ...(usData.flatrate || []),
       ...(usData.free     || []),
       ...(usData.ads      || []),
     ];
 
-    // Deduplicate: normalize each name to a canonical key, then keep the
-    // shortest original name per key (e.g. "Netflix" beats "Netflix with Ads")
-    const seen = new Map(); // normalizedKey → { name, logo_path }
+    // Group by normalized key, keeping the shortest original name per group.
+    // Shortest wins because "Netflix" (7) beats "Netflix Standard with Ads" (26),
+    // "Plex" (4) beats "Plex Channel" (12), etc.
+    const seen = new Map();
     for (const s of streams) {
       const key = normalizeProviderName(s.provider_name);
       if (!seen.has(key)) {
         seen.set(key, { name: s.provider_name, logo: s.logo_path });
       } else if (s.provider_name.length < seen.get(key).name.length) {
-        // Shorter name wins — it's the "root" service without suffixes
         seen.set(key, { name: s.provider_name, logo: s.logo_path });
       }
     }
