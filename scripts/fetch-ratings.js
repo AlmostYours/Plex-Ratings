@@ -78,7 +78,7 @@ function normalizeProviderName(name) {
     .replace(/\+/g, 'plus')                    // "Paramount+" → "paramountplus"
     .replace(/\s*\([^)]*\)/g, '')              // remove anything in parentheses
     .replace(/\bstandard\b/gi, '')             // "Netflix Standard with Ads"
-    .replace(/\bwith\s+ads\b/gi, '')
+    .replace(/\b(?:free\s+with\s+ads|with\s+ads)\b/gi, '')
     .replace(/\bno\s+ads\b/gi, '')
     .replace(/\bad[-\s]?free\b/gi, '')
     .replace(/\bbasic\b/gi, '')
