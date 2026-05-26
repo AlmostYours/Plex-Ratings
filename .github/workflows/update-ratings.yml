@@ -25,6 +25,7 @@ jobs:
         env:
           PLEX_URL:              ${{ secrets.PLEX_URL }}
           PLEX_TOKEN:            ${{ secrets.PLEX_TOKEN }}
+          TMDB_API_KEY:          ${{ secrets.TMDB_API_KEY }}
           OWNER_NAME:            ${{ vars.OWNER_NAME }}
           SHOWS_TAB_LABEL:       ${{ vars.SHOWS_TAB_LABEL }}
           SHOWS_SECTION_LABEL:   ${{ vars.SHOWS_SECTION_LABEL }}
