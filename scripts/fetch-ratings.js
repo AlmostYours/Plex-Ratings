@@ -2,6 +2,7 @@ const fs = require('fs');
 
 const PLEX_URL   = process.env.PLEX_URL;
 const PLEX_TOKEN = process.env.PLEX_TOKEN;
+const TMDB_API_KEY = process.env.TMDB_API_KEY;
 
 if (!PLEX_URL || !PLEX_TOKEN) {
   console.error('Missing PLEX_URL or PLEX_TOKEN environment variables.');
