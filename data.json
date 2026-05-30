@@ -3811,10 +3811,6 @@
           {
             "name": "Disney Plus",
             "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
-          },
-          {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
           }
         ]
       }
@@ -4826,10 +4822,6 @@
       "whereToWatch": {
         "link": "https://www.themoviedb.org/movie/9614-happy-gilmore/watch?locale=US",
         "providers": [
-          {
-            "name": "Starz Apple TV Channel",
-            "logo": "https://image.tmdb.org/t/p/original/1C5EVCWyQD798CE1DFfcm6oAbxP.jpg"
-          },
           {
             "name": "YouTube TV",
             "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
@@ -8210,5 +8202,5 @@
       }
     }
   ],
-  "updatedAt": "2026-05-30T08:13:35.484Z"
+  "updatedAt": "2026-05-30T12:57:06.760Z"
 }
