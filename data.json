@@ -3868,10 +3868,6 @@
         "link": "https://www.themoviedb.org/movie/7214-coach-carter/watch?locale=US",
         "providers": [
           {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
-          {
             "name": "MGM Plus",
             "logo": "https://image.tmdb.org/t/p/original/ctiRpS16dlaTXQBSsiFncMrgWmh.jpg"
           },
@@ -4046,10 +4042,6 @@
           {
             "name": "HBO Max",
             "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-          },
-          {
-            "name": "AMC+ Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
           },
           {
             "name": "Philo",
@@ -6125,7 +6117,7 @@
       "userRating": 9,
       "studio": "Columbia Pictures",
       "contentRating": "PG",
-      "duration": 7010131,
+      "duration": 7010130,
       "genres": [
         "Family",
         "Action",
@@ -6640,10 +6632,6 @@
       "whereToWatch": {
         "link": "https://www.themoviedb.org/movie/136400-2-guns/watch?locale=US",
         "providers": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
           {
             "name": "Starz Apple TV Channel",
             "logo": "https://image.tmdb.org/t/p/original/1C5EVCWyQD798CE1DFfcm6oAbxP.jpg"
@@ -7199,10 +7187,6 @@
           {
             "name": "HBO Max",
             "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-          },
-          {
-            "name": "Rakuten Viki",
-            "logo": "https://image.tmdb.org/t/p/original/73uV3YooOA8gD9YQTXFj2XakZWA.jpg"
           }
         ]
       }
@@ -7226,10 +7210,6 @@
       "whereToWatch": {
         "link": "https://www.themoviedb.org/movie/881-a-few-good-men/watch?locale=US",
         "providers": [
-          {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
           {
             "name": "YouTube TV",
             "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
@@ -8183,10 +8163,6 @@
         "link": "https://www.themoviedb.org/movie/97630-zero-dark-thirty/watch?locale=US",
         "providers": [
           {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
-          {
             "name": "Peacock Premium",
             "logo": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
           },
@@ -8206,5 +8182,5 @@
       }
     }
   ],
-  "updatedAt": "2026-06-01T02:10:08.695Z"
+  "updatedAt": "2026-06-01T17:09:54.274Z"
 }
