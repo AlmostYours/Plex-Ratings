@@ -687,10 +687,6 @@
           {
             "name": "Crunchyroll",
             "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
-          },
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
           }
         ]
       }
@@ -4567,10 +4563,6 @@
           {
             "name": "Disney Plus",
             "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
-          },
-          {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
           }
         ]
       }
@@ -5691,10 +5683,6 @@
             "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
           },
           {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
-          {
             "name": "Starz",
             "logo": "https://image.tmdb.org/t/p/original/yIKwylTLP1u8gl84Is7FItpYLGL.jpg"
           },
@@ -6467,10 +6455,6 @@
           {
             "name": "The Roku Channel",
             "logo": "https://image.tmdb.org/t/p/original/wQzSN83BnWVgO7xEh0SeTVqtrFv.jpg"
-          },
-          {
-            "name": "Filmzie",
-            "logo": "https://image.tmdb.org/t/p/original/eUBxtrqO26wAJfYOZJOzhQEo3mm.jpg"
           },
           {
             "name": "Cineverse",
@@ -8282,5 +8266,5 @@
       }
     }
   ],
-  "updatedAt": "2026-06-03T16:09:58.966Z"
+  "updatedAt": "2026-06-03T20:45:15.471Z"
 }
