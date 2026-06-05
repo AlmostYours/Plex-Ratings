@@ -6461,6 +6461,10 @@
             "logo": "https://image.tmdb.org/t/p/original/jpEV1w3CnrpDQ1vRvGQIZF1S6vA.jpg"
           },
           {
+            "name": "Xumo Play",
+            "logo": "https://image.tmdb.org/t/p/original/xfKqqWYYIyvjECOFOaYtJdD7gl3.jpg"
+          },
+          {
             "name": "Tubi TV",
             "logo": "https://image.tmdb.org/t/p/original/zLYr7OPvpskMA4S79E3vlCi71iC.jpg"
           }
@@ -8270,5 +8274,5 @@
       "whereToWatch": null
     }
   ],
-  "updatedAt": "2026-06-05T14:16:46.236Z"
+  "updatedAt": "2026-06-05T19:27:03.169Z"
 }
