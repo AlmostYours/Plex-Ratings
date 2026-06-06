@@ -3880,10 +3880,6 @@
         "link": "https://www.themoviedb.org/movie/7214-coach-carter/watch?locale=US",
         "providers": [
           {
-            "name": "MGM Plus",
-            "logo": "https://image.tmdb.org/t/p/original/ctiRpS16dlaTXQBSsiFncMrgWmh.jpg"
-          },
-          {
             "name": "Wonder Project Amazon Channel",
             "logo": "https://image.tmdb.org/t/p/original/aCEpg6aKYM6UUYP95frtKYyVQWD.jpg"
           },
@@ -4092,10 +4088,6 @@
       "whereToWatch": {
         "link": "https://www.themoviedb.org/movie/119450-dawn-of-the-planet-of-the-apes/watch?locale=US",
         "providers": [
-          {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          },
           {
             "name": "YouTube TV",
             "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
@@ -5517,10 +5509,6 @@
           {
             "name": "Disney Plus",
             "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
-          },
-          {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
           }
         ]
       }
@@ -5873,10 +5861,6 @@
       "whereToWatch": {
         "link": "https://www.themoviedb.org/movie/61791-rise-of-the-planet-of-the-apes/watch?locale=US",
         "providers": [
-          {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          },
           {
             "name": "YouTube TV",
             "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
@@ -6691,10 +6675,6 @@
           {
             "name": "Disney Plus",
             "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
-          },
-          {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
           }
         ]
       }
@@ -6877,6 +6857,10 @@
           {
             "name": "Hoopla",
             "logo": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
+          },
+          {
+            "name": "Fandango at Home Free",
+            "logo": "https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg"
           },
           {
             "name": "Plex",
@@ -7141,15 +7125,7 @@
       "imdbId": "tt0780504",
       "type": "movie",
       "poster": "posters/11574.jpg",
-      "whereToWatch": {
-        "link": "https://www.themoviedb.org/movie/64690-drive/watch?locale=US",
-        "providers": [
-          {
-            "name": "Xumo Play",
-            "logo": "https://image.tmdb.org/t/p/original/xfKqqWYYIyvjECOFOaYtJdD7gl3.jpg"
-          }
-        ]
-      }
+      "whereToWatch": null
     },
     {
       "ratingKey": "13015",
@@ -8132,6 +8108,10 @@
             "logo": "https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg"
           },
           {
+            "name": "Xumo Play",
+            "logo": "https://image.tmdb.org/t/p/original/xfKqqWYYIyvjECOFOaYtJdD7gl3.jpg"
+          },
+          {
             "name": "DistroTV",
             "logo": "https://image.tmdb.org/t/p/original/6gdKp9OwHgDLloethSPxZbtovkl.jpg"
           },
@@ -8274,5 +8254,5 @@
       "whereToWatch": null
     }
   ],
-  "updatedAt": "2026-06-06T08:20:34.132Z"
+  "updatedAt": "2026-06-06T13:01:19.488Z"
 }
