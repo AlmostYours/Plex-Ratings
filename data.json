@@ -18,7 +18,15 @@
       "imdbId": "tt16341212",
       "type": "show",
       "poster": "posters/28750.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/130237/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "28566",
@@ -39,7 +47,15 @@
       "imdbId": "tt19064770",
       "type": "show",
       "poster": "posters/28566.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/154743/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "25512",
@@ -60,7 +76,19 @@
       "imdbId": "tt3837246",
       "type": "show",
       "poster": "posters/25512.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/62110/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "20827",
@@ -81,7 +109,23 @@
       "imdbId": "tt7441658",
       "type": "show",
       "poster": "posters/20827.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/73223/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          },
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "31531",
@@ -102,7 +146,15 @@
       "imdbId": "tt32639706",
       "type": "show",
       "poster": "posters/31531.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/207347/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "21877",
@@ -123,7 +175,15 @@
       "imdbId": "tt29899598",
       "type": "show",
       "poster": "posters/21877.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/239214/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "26421",
@@ -144,7 +204,19 @@
       "imdbId": "tt21423786",
       "type": "show",
       "poster": "posters/26421.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/207250/watch?locale=US",
+        "providers": [
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          },
+          {
+            "name": "HiDive",
+            "logo": "https://image.tmdb.org/t/p/original/iCV9oPBeoLDC5okFRZEgQkx7je0.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "28650",
@@ -165,7 +237,15 @@
       "imdbId": "tt21975478",
       "type": "show",
       "poster": "posters/28650.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/206629/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "31355",
@@ -186,7 +266,15 @@
       "imdbId": "tt30495098",
       "type": "show",
       "poster": "posters/31355.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/231357/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "33265",
@@ -207,7 +295,15 @@
       "imdbId": "tt36592690",
       "type": "show",
       "poster": "posters/33265.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/271607/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "17330",
@@ -228,7 +324,23 @@
       "imdbId": "tt22248376",
       "type": "show",
       "poster": "posters/17330.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/209867/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          },
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "17360",
@@ -249,7 +361,19 @@
       "imdbId": "tt9304350",
       "type": "show",
       "poster": "posters/17360.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/85991/watch?locale=US",
+        "providers": [
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          },
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "31170",
@@ -270,7 +394,15 @@
       "imdbId": "tt21844706",
       "type": "show",
       "poster": "posters/31170.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/200732/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "28551",
@@ -290,7 +422,15 @@
       "imdbId": "tt28265657",
       "type": "show",
       "poster": "posters/28551.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/218263/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "30823",
@@ -310,7 +450,15 @@
       "imdbId": "tt31528958",
       "type": "show",
       "poster": "posters/30823.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/247859/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "30701",
@@ -330,7 +478,15 @@
       "imdbId": "tt32741637",
       "type": "show",
       "poster": "posters/30701.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/257790/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "31141",
@@ -351,7 +507,19 @@
       "imdbId": "tt26450257",
       "type": "show",
       "poster": "posters/31141.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/155440/watch?locale=US",
+        "providers": [
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          },
+          {
+            "name": "Hidive Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "18238",
@@ -372,7 +540,15 @@
       "imdbId": "tt9522300",
       "type": "show",
       "poster": "posters/18238.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/83121/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "25658",
@@ -393,7 +569,15 @@
       "imdbId": "tt21975436",
       "type": "show",
       "poster": "posters/25658.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/207468/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "28610",
@@ -434,7 +618,15 @@
       "imdbId": "tt2321542",
       "type": "show",
       "poster": "posters/18426.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/45501/watch?locale=US",
+        "providers": [
+          {
+            "name": "Hidive Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "24941",
@@ -455,7 +647,15 @@
       "imdbId": "tt6402190",
       "type": "show",
       "poster": "posters/24941.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/69295/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "25467",
@@ -476,7 +676,15 @@
       "imdbId": "tt23711384",
       "type": "show",
       "poster": "posters/25467.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/214547/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "18658",
@@ -497,7 +705,27 @@
       "imdbId": "tt5626028",
       "type": "show",
       "poster": "posters/18658.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/65930/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          },
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          },
+          {
+            "name": "Rakuten Viki",
+            "logo": "https://image.tmdb.org/t/p/original/73uV3YooOA8gD9YQTXFj2XakZWA.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "26612",
@@ -517,7 +745,15 @@
       "imdbId": "tt22297712",
       "type": "show",
       "poster": "posters/26612.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/208067-lv999/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "28224",
@@ -538,7 +774,15 @@
       "imdbId": "tt19848112",
       "type": "show",
       "poster": "posters/28224.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/129516/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "21543",
@@ -559,7 +803,15 @@
       "imdbId": "tt4508902",
       "type": "show",
       "poster": "posters/21543.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/63926/watch?locale=US",
+        "providers": [
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "28704",
@@ -580,7 +832,19 @@
       "imdbId": "tt5839732",
       "type": "show",
       "poster": "posters/28704.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/66958-orange/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          },
+          {
+            "name": "Rakuten Viki",
+            "logo": "https://image.tmdb.org/t/p/original/73uV3YooOA8gD9YQTXFj2XakZWA.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "26827",
@@ -600,7 +864,15 @@
       "imdbId": "tt32552529",
       "type": "show",
       "poster": "posters/26827.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/224753/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "19685",
@@ -621,7 +893,19 @@
       "imdbId": "tt5607616",
       "type": "show",
       "poster": "posters/19685.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/65942-re/watch?locale=US",
+        "providers": [
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          },
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "19807",
@@ -642,7 +926,15 @@
       "imdbId": "tt4542568",
       "type": "show",
       "poster": "posters/19807.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/63087/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "25409",
@@ -663,7 +955,15 @@
       "imdbId": "tt21209876",
       "type": "show",
       "poster": "posters/25409.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/127532/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "31156",
@@ -684,7 +984,15 @@
       "imdbId": "tt31975268",
       "type": "show",
       "poster": "posters/31156.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/236533/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "32438",
@@ -704,7 +1012,19 @@
       "imdbId": "tt2560604",
       "type": "show",
       "poster": "posters/32438.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/48561/watch?locale=US",
+        "providers": [
+          {
+            "name": "Hidive Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
+          },
+          {
+            "name": "Hoopla",
+            "logo": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "20102",
@@ -724,7 +1044,19 @@
       "imdbId": "tt7808344",
       "type": "show",
       "poster": "posters/20102.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/75865/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          },
+          {
+            "name": "Hidive Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "20430",
@@ -745,7 +1077,15 @@
       "imdbId": "tt1279024",
       "type": "show",
       "poster": "posters/20430.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/42916/watch?locale=US",
+        "providers": [
+          {
+            "name": "Amazon Prime Video",
+            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "30225",
@@ -765,7 +1105,15 @@
       "imdbId": "tt14979456",
       "type": "show",
       "poster": "posters/30225.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/116168/watch?locale=US",
+        "providers": [
+          {
+            "name": "Hidive Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "26986",
@@ -786,7 +1134,19 @@
       "imdbId": "tt29605391",
       "type": "show",
       "poster": "posters/26986.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/223500-wind-breaker/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "35387",
@@ -806,7 +1166,15 @@
       "imdbId": "tt36034547",
       "type": "show",
       "poster": "posters/35387.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/278043/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     }
   ],
   "movies": [
@@ -829,7 +1197,19 @@
       "imdbId": "tt6317962",
       "type": "movie",
       "poster": "posters/2553.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/movie/431819/watch?locale=US",
+        "providers": [
+          {
+            "name": "HBO Max",
+            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
+          },
+          {
+            "name": "Hoopla",
+            "logo": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "3968",
@@ -849,7 +1229,15 @@
       "imdbId": "tt12879624",
       "type": "movie",
       "poster": "posters/3968.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/movie/652837/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "5814",
@@ -870,7 +1258,15 @@
       "imdbId": "tt2981768",
       "type": "movie",
       "poster": "posters/5814.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/movie/212167/watch?locale=US",
+        "providers": [
+          {
+            "name": "Kanopy",
+            "logo": "https://image.tmdb.org/t/p/original/rcBwnERpNfPfWB5DaSTyEMCZbCA.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "24696",
@@ -891,7 +1287,19 @@
       "imdbId": "tt17382524",
       "type": "movie",
       "poster": "posters/24696.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/movie/916192/watch?locale=US",
+        "providers": [
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          },
+          {
+            "name": "HiDive",
+            "logo": "https://image.tmdb.org/t/p/original/iCV9oPBeoLDC5okFRZEgQkx7je0.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "10408",
@@ -912,7 +1320,19 @@
       "imdbId": "tt9426210",
       "type": "movie",
       "poster": "posters/10408.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/movie/568160/watch?locale=US",
+        "providers": [
+          {
+            "name": "HBO Max",
+            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
+          },
+          {
+            "name": "Hoopla",
+            "logo": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "156",
@@ -933,7 +1353,15 @@
       "imdbId": "tt11958344",
       "type": "movie",
       "poster": "posters/156.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/movie/667520/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "10706",
@@ -954,8 +1382,16 @@
       "imdbId": "tt5311514",
       "type": "movie",
       "poster": "posters/10706.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/movie/372058/watch?locale=US",
+        "providers": [
+          {
+            "name": "HBO Max",
+            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
+          }
+        ]
+      }
     }
   ],
-  "updatedAt": "2026-06-07T01:41:04.967Z"
+  "updatedAt": "2026-06-07T01:47:52.393Z"
 }
