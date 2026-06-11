@@ -248,6 +248,43 @@
       }
     },
     {
+      "ratingKey": "17094",
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "year": 2019,
+      "summary": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
+      "userRating": 10,
+      "studio": "ufotable",
+      "contentRating": "TV-14",
+      "duration": 1440000,
+      "genres": [
+        "Animation",
+        "Anime",
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "imdbId": "tt9335498",
+      "type": "show",
+      "poster": "posters/17094.jpg",
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/85937/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          },
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
+    },
+    {
       "ratingKey": "31355",
       "title": "The Foolish Angel Dances with the Devil",
       "year": 2024,
@@ -1393,5 +1430,5 @@
       }
     }
   ],
-  "updatedAt": "2026-06-10T23:16:27.862Z"
+  "updatedAt": "2026-06-11T13:05:37.979Z"
 }
