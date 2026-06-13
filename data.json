@@ -1365,6 +1365,10 @@
             "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
           },
           {
+            "name": "YouTube TV",
+            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+          },
+          {
             "name": "Hoopla",
             "logo": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
           }
@@ -1430,5 +1434,5 @@
       }
     }
   ],
-  "updatedAt": "2026-06-12T23:03:35.814Z"
+  "updatedAt": "2026-06-13T17:02:16.976Z"
 }
