@@ -127,6 +127,10 @@
           {
             "name": "Crunchyroll",
             "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          },
+          {
+            "name": "YouTube TV",
+            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
           }
         ]
       }
@@ -1446,5 +1450,5 @@
       }
     }
   ],
-  "updatedAt": "2026-06-14T22:20:33.861Z"
+  "updatedAt": "2026-06-15T18:09:47.849Z"
 }
