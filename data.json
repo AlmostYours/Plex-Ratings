@@ -564,8 +564,8 @@
             "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
           },
           {
-            "name": "Hidive Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
+            "name": "HiDive",
+            "logo": "https://image.tmdb.org/t/p/original/iCV9oPBeoLDC5okFRZEgQkx7je0.jpg"
           }
         ]
       }
@@ -1446,5 +1446,5 @@
       }
     }
   ],
-  "updatedAt": "2026-06-21T17:12:17.571Z"
+  "updatedAt": "2026-06-21T22:38:11.334Z"
 }
