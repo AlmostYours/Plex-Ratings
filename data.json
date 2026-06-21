@@ -946,10 +946,6 @@
         "link": "https://www.themoviedb.org/tv/65942-re/watch?locale=US",
         "providers": [
           {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          },
-          {
             "name": "Crunchyroll",
             "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
           }
@@ -1450,5 +1446,5 @@
       }
     }
   ],
-  "updatedAt": "2026-06-21T11:33:21.948Z"
+  "updatedAt": "2026-06-21T17:12:17.571Z"
 }
