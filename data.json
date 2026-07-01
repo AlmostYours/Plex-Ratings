@@ -700,6 +700,10 @@
         "link": "https://www.themoviedb.org/tv/45501/watch?locale=US",
         "providers": [
           {
+            "name": "Amazon Prime Video",
+            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+          },
+          {
             "name": "Hidive Amazon Channel",
             "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
           }
@@ -1479,5 +1483,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-01T11:41:14.378Z"
+  "updatedAt": "2026-07-01T18:32:33.909Z"
 }
