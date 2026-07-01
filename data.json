@@ -297,6 +297,35 @@
       }
     },
     {
+      "ratingKey": "24968",
+      "title": "DON'T TOY WITH ME, MISS NAGATORO",
+      "year": 2021,
+      "summary": "High schooler Hayase Nagatoro loves to spend her free time doing one thing, and that is to bully her Senpai. After Nagatoro and her friends stumble upon the aspiring artist's drawings, they find enjoyment in mercilessly bullying the timid Senpai.",
+      "userRating": 9,
+      "studio": "Telecom Animation Film",
+      "contentRating": "TV-14",
+      "duration": 1440000,
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Anime",
+        "Drama",
+        "Romance"
+      ],
+      "imdbId": "tt12635162",
+      "type": "show",
+      "poster": "posters/24968.jpg",
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/105556/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
+    },
+    {
       "ratingKey": "31355",
       "title": "The Foolish Angel Dances with the Devil",
       "year": 2024,
@@ -1450,5 +1479,5 @@
       }
     }
   ],
-  "updatedAt": "2026-06-30T18:23:36.235Z"
+  "updatedAt": "2026-07-01T11:41:14.378Z"
 }
