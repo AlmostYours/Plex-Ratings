@@ -1402,10 +1402,6 @@
         "link": "https://www.themoviedb.org/movie/916192/watch?locale=US",
         "providers": [
           {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          },
-          {
             "name": "HiDive",
             "logo": "https://image.tmdb.org/t/p/original/iCV9oPBeoLDC5okFRZEgQkx7je0.jpg"
           }
@@ -1512,5 +1508,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-05T21:37:39.663Z"
+  "updatedAt": "2026-07-06T14:07:12.073Z"
 }
