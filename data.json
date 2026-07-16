@@ -1245,19 +1245,7 @@
       "imdbId": "tt29605391",
       "type": "show",
       "poster": "posters/26986.jpg",
-      "whereToWatch": {
-        "link": "https://www.themoviedb.org/tv/223500-wind-breaker/watch?locale=US",
-        "providers": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Crunchyroll",
-            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
-          }
-        ]
-      }
+      "whereToWatch": null
     },
     {
       "ratingKey": "35387",
@@ -1508,5 +1496,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-16T02:12:56.178Z"
+  "updatedAt": "2026-07-16T08:31:22.977Z"
 }
