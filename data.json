@@ -38,10 +38,10 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
-        "Animation",
-        "Comedy",
-        "Drama",
         "Romance",
+        "Drama",
+        "Comedy",
+        "Animation",
         "Anime"
       ],
       "imdbId": "tt19064770",
@@ -71,11 +71,11 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
-        "Animation",
         "Comedy",
+        "Anime",
+        "Animation",
         "Action",
-        "Fantasy",
-        "Science Fiction"
+        "Fantasy"
       ],
       "imdbId": "tt3837246",
       "type": "show",
@@ -145,11 +145,11 @@
       "contentRating": "TV-PG",
       "duration": 1500000,
       "genres": [
-        "Animation",
-        "Comedy",
-        "Anime",
+        "Romance",
         "Drama",
-        "Romance"
+        "Anime",
+        "Animation",
+        "Comedy"
       ],
       "imdbId": "tt32639706",
       "type": "show",
@@ -335,11 +335,11 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
-        "Animation",
-        "Comedy",
-        "Fantasy",
         "Romance",
-        "Sci-Fi & Fantasy"
+        "Fantasy",
+        "Anime",
+        "Animation",
+        "Comedy"
       ],
       "imdbId": "tt30495098",
       "type": "show",
@@ -463,11 +463,11 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
-        "Animation",
-        "Comedy",
-        "Fantasy",
         "Romance",
-        "Drama"
+        "Drama",
+        "Comedy",
+        "Animation",
+        "Fantasy"
       ],
       "imdbId": "tt21844706",
       "type": "show",
@@ -1245,7 +1245,19 @@
       "imdbId": "tt29605391",
       "type": "show",
       "poster": "posters/26986.jpg",
-      "whereToWatch": null
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/223500-wind-breaker/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+          }
+        ]
+      }
     },
     {
       "ratingKey": "35387",
@@ -1472,11 +1484,11 @@
       "contentRating": "PG",
       "duration": 6395648,
       "genres": [
+        "Anime",
         "Animation",
         "Drama",
         "Fantasy",
-        "Romance",
-        "Anime"
+        "Romance"
       ],
       "imdbId": "tt5311514",
       "type": "movie",
@@ -1496,5 +1508,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-16T08:31:22.977Z"
+  "updatedAt": "2026-07-16T13:42:10.464Z"
 }
