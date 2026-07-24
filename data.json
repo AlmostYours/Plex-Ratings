@@ -986,6 +986,35 @@
       }
     },
     {
+      "ratingKey": "35747",
+      "title": "The Ramparts of Ice",
+      "year": 2026,
+      "summary": "Koyuki Hikawa, a high school loner who avoids emotional connections, sees her solitary existence disrupted when a cheerful classmate tries to penetrate her walls, pulling her into an uncomfortable but sincere friend group.",
+      "userRating": 9,
+      "studio": "Studio KAI",
+      "contentRating": "TV-PG",
+      "duration": 1440000,
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Anime"
+      ],
+      "imdbId": "tt39123061",
+      "type": "show",
+      "poster": "posters/35747.jpg",
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/283428/watch?locale=US",
+        "providers": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          }
+        ]
+      }
+    },
+    {
       "ratingKey": "19685",
       "title": "Re:ZERO -Starting Life in Another World-",
       "year": 2016,
@@ -1508,5 +1537,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-24T13:28:43.508Z"
+  "updatedAt": "2026-07-24T19:19:12.180Z"
 }
