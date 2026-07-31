@@ -1156,8 +1156,8 @@
         "link": "https://www.themoviedb.org/tv/48561/watch?locale=US",
         "providers": [
           {
-            "name": "HiDive",
-            "logo": "https://image.tmdb.org/t/p/original/iCV9oPBeoLDC5okFRZEgQkx7je0.jpg"
+            "name": "Hidive Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
           },
           {
             "name": "Hoopla",
@@ -1192,8 +1192,8 @@
             "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
           },
           {
-            "name": "HiDive",
-            "logo": "https://image.tmdb.org/t/p/original/iCV9oPBeoLDC5okFRZEgQkx7je0.jpg"
+            "name": "Hidive Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
           }
         ]
       }
@@ -1537,5 +1537,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-31T13:56:08.219Z"
+  "updatedAt": "2026-07-31T19:19:10.807Z"
 }
