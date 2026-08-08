@@ -1385,11 +1385,11 @@
       "contentRating": "PG-13",
       "duration": 5929941,
       "genres": [
+        "Science Fiction",
         "Animation",
         "Adventure",
         "Drama",
-        "Fantasy",
-        "Science Fiction"
+        "Fantasy"
       ],
       "imdbId": "tt2981768",
       "type": "movie",
@@ -1533,5 +1533,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-08T12:38:58.188Z"
+  "updatedAt": "2026-08-08T18:31:22.470Z"
 }
