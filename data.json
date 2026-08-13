@@ -1010,9 +1010,9 @@
       "genres": [
         "Animation",
         "Anime",
+        "Fantasy",
         "Adventure",
-        "Drama",
-        "Fantasy"
+        "Drama"
       ],
       "imdbId": "tt5607616",
       "type": "show",
@@ -1513,5 +1513,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-13T13:00:49.483Z"
+  "updatedAt": "2026-08-13T18:58:12.452Z"
 }
