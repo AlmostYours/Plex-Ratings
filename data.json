@@ -1140,8 +1140,8 @@
         "link": "https://www.themoviedb.org/tv/48561/watch?locale=US",
         "providers": [
           {
-            "name": "Hidive Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
+            "name": "HiDive",
+            "logo": "https://image.tmdb.org/t/p/original/iCV9oPBeoLDC5okFRZEgQkx7je0.jpg"
           },
           {
             "name": "Hoopla",
@@ -1513,5 +1513,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-14T07:18:23.990Z"
+  "updatedAt": "2026-08-14T12:56:40.723Z"
 }
