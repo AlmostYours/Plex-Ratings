@@ -38,10 +38,10 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
-        "Romance",
-        "Drama",
         "Comedy",
         "Animation",
+        "Drama",
+        "Romance",
         "Anime"
       ],
       "imdbId": "tt19064770",
@@ -100,11 +100,11 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
-        "Animation",
-        "Comedy",
-        "Anime",
+        "Fantasy",
         "Action",
-        "Adventure"
+        "Animation",
+        "Adventure",
+        "Comedy"
       ],
       "imdbId": "tt7441658",
       "type": "show",
@@ -195,10 +195,10 @@
       "contentRating": "TV-14",
       "duration": 1380000,
       "genres": [
-        "Animation",
-        "Comedy",
         "Romance",
         "Drama",
+        "Comedy",
+        "Animation",
         "Anime"
       ],
       "imdbId": "tt21423786",
@@ -258,10 +258,10 @@
       "duration": 1440000,
       "genres": [
         "Animation",
-        "Anime",
         "Action",
         "Adventure",
-        "Fantasy"
+        "Fantasy",
+        "Thriller"
       ],
       "imdbId": "tt9335498",
       "type": "show",
@@ -294,11 +294,11 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
-        "Animation",
+        "Romance",
         "Comedy",
-        "Anime",
+        "Animation",
         "Drama",
-        "Romance"
+        "Anime"
       ],
       "imdbId": "tt12635162",
       "type": "show",
@@ -418,11 +418,11 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
+        "Romance",
+        "Drama",
         "Animation",
         "Comedy",
-        "Drama",
-        "Fantasy",
-        "Romance"
+        "Fantasy"
       ],
       "imdbId": "tt9304350",
       "type": "show",
@@ -1513,5 +1513,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-15T06:31:09.167Z"
+  "updatedAt": "2026-08-15T12:29:50.621Z"
 }
