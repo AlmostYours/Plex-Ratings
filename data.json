@@ -1233,8 +1233,8 @@
         "link": "https://www.themoviedb.org/tv/116168/watch?locale=US",
         "providers": [
           {
-            "name": "Hidive Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
+            "name": "HiDive",
+            "logo": "https://image.tmdb.org/t/p/original/iCV9oPBeoLDC5okFRZEgQkx7je0.jpg"
           }
         ]
       }
@@ -1513,5 +1513,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-15T18:22:25.170Z"
+  "updatedAt": "2026-08-16T01:03:49.516Z"
 }
