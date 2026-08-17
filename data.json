@@ -1099,10 +1099,10 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
-        "Animation",
-        "Comedy",
-        "Fantasy",
         "Romance",
+        "Comedy",
+        "Animation",
+        "Fantasy",
         "Sci-Fi & Fantasy"
       ],
       "imdbId": "tt31975268",
@@ -1513,5 +1513,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-17T06:45:27.238Z"
+  "updatedAt": "2026-08-17T12:35:40.380Z"
 }
