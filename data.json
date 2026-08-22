@@ -208,10 +208,6 @@
         "link": "https://www.themoviedb.org/tv/207250/watch?locale=US",
         "providers": [
           {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          },
-          {
             "name": "HiDive",
             "logo": "https://image.tmdb.org/t/p/original/iCV9oPBeoLDC5okFRZEgQkx7je0.jpg"
           }
@@ -1513,5 +1509,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-22T12:30:30.246Z"
+  "updatedAt": "2026-08-22T18:23:20.392Z"
 }
