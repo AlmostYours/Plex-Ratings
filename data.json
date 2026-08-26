@@ -898,6 +898,10 @@
         "link": "https://www.themoviedb.org/tv/63926/watch?locale=US",
         "providers": [
           {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
             "name": "Hulu",
             "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
           }
@@ -1509,5 +1513,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-26T12:42:49.864Z"
+  "updatedAt": "2026-08-26T19:43:58.828Z"
 }
