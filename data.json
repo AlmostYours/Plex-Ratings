@@ -109,23 +109,7 @@
       "imdbId": "tt7441658",
       "type": "show",
       "poster": "posters/20827.jpg",
-      "whereToWatch": {
-        "link": "https://www.themoviedb.org/tv/73223/watch?locale=US",
-        "providers": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          },
-          {
-            "name": "Crunchyroll",
-            "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
-          }
-        ]
-      }
+      "whereToWatch": null
     },
     {
       "ratingKey": "31531",
@@ -1513,5 +1497,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-01T16:00:08.985Z"
+  "updatedAt": "2026-09-01T20:28:45.517Z"
 }
