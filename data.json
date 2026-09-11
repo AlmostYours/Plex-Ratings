@@ -915,10 +915,6 @@
         "link": "https://www.themoviedb.org/tv/66958-orange/watch?locale=US",
         "providers": [
           {
-            "name": "Crunchyroll Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/qHLLmKo7udRgiSnIASVTwP2IxfJ.png"
-          },
-          {
             "name": "Rakuten Viki",
             "logo": "https://image.tmdb.org/t/p/original/AoNsevRecTdVv4xQEf1oLRGO2yh.png"
           }
@@ -1497,5 +1493,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-10T20:22:38.779Z"
+  "updatedAt": "2026-09-11T02:48:49.612Z"
 }
