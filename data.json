@@ -100,11 +100,11 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
-        "Fantasy",
-        "Action",
         "Animation",
+        "Action",
         "Adventure",
-        "Comedy"
+        "Comedy",
+        "Drama"
       ],
       "imdbId": "tt7441658",
       "type": "show",
@@ -121,11 +121,11 @@
       "contentRating": "TV-PG",
       "duration": 1500000,
       "genres": [
-        "Romance",
         "Drama",
-        "Anime",
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Romance",
+        "Sport"
       ],
       "imdbId": "tt32639706",
       "type": "show",
@@ -305,9 +305,9 @@
       "genres": [
         "Romance",
         "Fantasy",
-        "Anime",
         "Animation",
-        "Comedy"
+        "Comedy",
+        "Sci-Fi & Fantasy"
       ],
       "imdbId": "tt30495098",
       "type": "show",
@@ -410,10 +410,6 @@
       "whereToWatch": {
         "link": "https://www.themoviedb.org/tv/85991/watch?locale=US",
         "providers": [
-          {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-          },
           {
             "name": "Crunchyroll",
             "logo": "https://image.tmdb.org/t/p/original/uFL3c4Cq8M6WoLymlC5Y8bmGytV.png"
@@ -1493,5 +1489,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-15T10:58:22.633Z"
+  "updatedAt": "2026-09-15T16:09:36.925Z"
 }
