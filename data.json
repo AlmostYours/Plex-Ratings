@@ -784,12 +784,12 @@
         "link": "https://www.themoviedb.org/tv/65930/watch?locale=US",
         "providers": [
           {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
-          },
-          {
             "name": "Hulu",
             "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+          },
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
           },
           {
             "name": "Crunchyroll",
@@ -1489,5 +1489,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-22T03:06:54.768Z"
+  "updatedAt": "2026-09-22T10:53:46.106Z"
 }
