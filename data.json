@@ -447,6 +447,34 @@
       }
     },
     {
+      "ratingKey": "35660",
+      "title": "Gals Can't Be Kind to Otaku!?",
+      "year": 2026,
+      "summary": "Quiet otaku Takuya Seo keeps to himself until two gals from his class, cool Kei Amane and cheerful Kotoko Ijichi, start talking to him. They bond over anime, games, and fandom-but do gals who befriend otaku really exist?",
+      "userRating": 9,
+      "studio": "TMS Entertainment",
+      "contentRating": "TV-14",
+      "duration": 1440000,
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Romance",
+        "Anime"
+      ],
+      "imdbId": "tt39443176",
+      "type": "show",
+      "poster": "posters/35660.jpg",
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/309163/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/uFL3c4Cq8M6WoLymlC5Y8bmGytV.png"
+          }
+        ]
+      }
+    },
+    {
       "ratingKey": "28551",
       "title": "The Girl I Like Forgot Her Glasses",
       "year": 2023,
@@ -720,6 +748,34 @@
       "poster": "posters/24941.jpg",
       "whereToWatch": {
         "link": "https://www.themoviedb.org/tv/69295/watch?locale=US",
+        "providers": [
+          {
+            "name": "Crunchyroll",
+            "logo": "https://image.tmdb.org/t/p/original/uFL3c4Cq8M6WoLymlC5Y8bmGytV.png"
+          }
+        ]
+      }
+    },
+    {
+      "ratingKey": "34332",
+      "title": "My Awkward Senpai",
+      "year": 2025,
+      "summary": "Kannawa-senpai is considered many things, but smooth is definitely not one of them. Then she meets Kamegawa, her new Kouhai. He's cute, a little nerdy, and easy to talk to. How will this awkward Senpai be able to handle these new feelings?!",
+      "userRating": 8,
+      "studio": "Studio Elle",
+      "contentRating": "TV-14",
+      "duration": 1440000,
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Romance",
+        "Anime"
+      ],
+      "imdbId": "tt37679127",
+      "type": "show",
+      "poster": "posters/34332.jpg",
+      "whereToWatch": {
+        "link": "https://www.themoviedb.org/tv/284433/watch?locale=US",
         "providers": [
           {
             "name": "Crunchyroll",
@@ -1485,5 +1541,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-28T12:47:55.583Z"
+  "updatedAt": "2026-09-28T22:54:12.201Z"
 }
