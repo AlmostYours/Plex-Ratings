@@ -1493,10 +1493,10 @@
       "duration": 6267306,
       "genres": [
         "Drama",
-        "Anime",
-        "Animation",
         "Adventure",
-        "Family"
+        "Family",
+        "Animation",
+        "Fantasy"
       ],
       "imdbId": "tt11958344",
       "type": "movie",
@@ -1541,5 +1541,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-29T12:03:08.472Z"
+  "updatedAt": "2026-09-29T21:48:02.296Z"
 }
