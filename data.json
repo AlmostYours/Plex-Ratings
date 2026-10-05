@@ -254,12 +254,12 @@
         "link": "https://www.themoviedb.org/tv/85937/watch?locale=US",
         "providers": [
           {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-          },
-          {
             "name": "Netflix",
             "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          },
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
           },
           {
             "name": "Crunchyroll",
@@ -378,12 +378,12 @@
         "link": "https://www.themoviedb.org/tv/209867/watch?locale=US",
         "providers": [
           {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-          },
-          {
             "name": "Netflix",
             "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          },
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
           },
           {
             "name": "Crunchyroll",
@@ -787,12 +787,12 @@
         "link": "https://www.themoviedb.org/tv/204832-mashle/watch?locale=US",
         "providers": [
           {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-          },
-          {
             "name": "Netflix",
             "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          },
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
           },
           {
             "name": "Crunchyroll",
@@ -881,12 +881,12 @@
         "link": "https://www.themoviedb.org/tv/65930/watch?locale=US",
         "providers": [
           {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-          },
-          {
             "name": "Netflix",
             "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          },
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
           },
           {
             "name": "Crunchyroll",
@@ -979,12 +979,12 @@
         "link": "https://www.themoviedb.org/tv/63926/watch?locale=US",
         "providers": [
           {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-          },
-          {
             "name": "Netflix",
             "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          },
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
           }
         ]
       }
@@ -1586,5 +1586,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-05T13:29:15.295Z"
+  "updatedAt": "2026-10-05T23:40:23.336Z"
 }
