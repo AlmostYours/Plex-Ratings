@@ -258,6 +258,10 @@
             "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
           },
           {
+            "name": "Amazon Prime Video",
+            "logo": "https://image.tmdb.org/t/p/original/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+          },
+          {
             "name": "Hulu",
             "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
           },
@@ -1586,5 +1590,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-09T12:30:39.816Z"
+  "updatedAt": "2026-10-09T22:11:25.075Z"
 }
