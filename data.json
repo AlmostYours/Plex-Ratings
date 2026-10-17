@@ -964,17 +964,17 @@
       "ratingKey": "21543",
       "title": "One-Punch Man",
       "year": 2015,
-      "summary": "The story of Saitama, a hero that does it just for fun & can defeat his enemies with a single punch.",
+      "summary": "Saitama, a superhero who can defeat any foe with a single punch, battles boredom as he searches for a worthy opponent in a world plagued by monsters.",
       "userRating": 8,
       "studio": "Madhouse",
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
         "Comedy",
-        "Action",
-        "Anime",
         "Animation",
-        "Fantasy"
+        "Action",
+        "Fantasy",
+        "Science Fiction"
       ],
       "imdbId": "tt4508902",
       "type": "show",
@@ -1602,5 +1602,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-17T10:05:41.440Z"
+  "updatedAt": "2026-10-17T14:53:06.686Z"
 }
