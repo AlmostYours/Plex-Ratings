@@ -1334,11 +1334,11 @@
       "contentRating": "TV-14",
       "duration": 1440000,
       "genres": [
-        "Drama",
-        "Action",
         "Animation",
+        "Action",
         "Adventure",
-        "Comedy"
+        "Comedy",
+        "Drama"
       ],
       "imdbId": "tt29605391",
       "type": "show",
@@ -1602,5 +1602,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-18T10:18:58.323Z"
+  "updatedAt": "2026-10-18T15:18:49.561Z"
 }
