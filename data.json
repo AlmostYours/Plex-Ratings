@@ -160,7 +160,7 @@
       "type": "show",
       "poster": "posters/21877.jpg",
       "whereToWatch": {
-        "link": "https://www.themoviedb.org/tv/239214/watch?locale=US",
+        "link": "https://www.themoviedb.org/tv/239214-hua-ye-jing-kunto-lian-no-bing/watch?locale=US",
         "providers": [
           {
             "name": "Crunchyroll",
@@ -222,7 +222,7 @@
       "type": "show",
       "poster": "posters/28650.jpg",
       "whereToWatch": {
-        "link": "https://www.themoviedb.org/tv/206629/watch?locale=US",
+        "link": "https://www.themoviedb.org/tv/206629-yi-mei-sheng-huo/watch?locale=US",
         "providers": [
           {
             "name": "Crunchyroll",
@@ -473,7 +473,7 @@
       "type": "show",
       "poster": "posters/35660.jpg",
       "whereToWatch": {
-        "link": "https://www.themoviedb.org/tv/309163/watch?locale=US",
+        "link": "https://www.themoviedb.org/tv/309163-otakuni-you-shiigiyaruhainai/watch?locale=US",
         "providers": [
           {
             "name": "Crunchyroll",
@@ -1053,7 +1053,7 @@
       "type": "show",
       "poster": "posters/26827.jpg",
       "whereToWatch": {
-        "link": "https://www.themoviedb.org/tv/224753/watch?locale=US",
+        "link": "https://www.themoviedb.org/tv/224753-yi-si-haremu/watch?locale=US",
         "providers": [
           {
             "name": "Crunchyroll",
@@ -1144,7 +1144,7 @@
       "type": "show",
       "poster": "posters/19807.jpg",
       "whereToWatch": {
-        "link": "https://www.themoviedb.org/tv/63087/watch?locale=US",
+        "link": "https://www.themoviedb.org/tv/63087-chi-fa-no-bai-xue-ji/watch?locale=US",
         "providers": [
           {
             "name": "Crunchyroll",
@@ -1571,7 +1571,7 @@
       "type": "movie",
       "poster": "posters/156.jpg",
       "whereToWatch": {
-        "link": "https://www.themoviedb.org/movie/667520/watch?locale=US",
+        "link": "https://www.themoviedb.org/movie/667520-qi-kitai-si-ha-mao-okaburu/watch?locale=US",
         "providers": [
           {
             "name": "Netflix",
@@ -1600,7 +1600,7 @@
       "type": "movie",
       "poster": "posters/10706.jpg",
       "whereToWatch": {
-        "link": "https://www.themoviedb.org/movie/372058/watch?locale=US",
+        "link": "https://www.themoviedb.org/movie/372058-jun-no-ming-ha/watch?locale=US",
         "providers": [
           {
             "name": "HBO Max",
@@ -1610,5 +1610,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-13T23:11:46.637Z"
+  "updatedAt": "2026-11-14T04:46:09.388Z"
 }
